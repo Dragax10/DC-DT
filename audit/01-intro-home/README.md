@@ -16,6 +16,10 @@ Source: screen recording `IRIS-intro-2.mov` (59 s, 20 Oct 2026). Frames below ar
 | 10 | `10_Catalogue_Voyage.png` | 0:38 | Catalogue filtered by category |
 | 11 | `11_Notifications.png` | 0:43 | Notifications panel |
 | 12 | `12_Notifications_empty.png` | 0:48 | Notifications empty state ("Lu" tab) |
+| 13 | `13_Type_Voyage.png` | rec. 2 · 0:02 | "Choisissez le type de contrat" for Voyage: Individuel / Famille / Groupe |
+| 14 | `14_Type_Auto.png` | rec. 2 · 0:05 | Same modal for Auto: Mono / Flotte |
+| 15 | `15_Convention_list.png` | rec. 2 · 0:10 | "Choisissez la convention": 16 conventions, search, nothing selected |
+| 16 | `16_Convention_selected.png` | rec. 2 · 0:14 | Convention selected; "Continuer vers la souscription" enabled |
 
 ## Strengths
 - Products are the entry point: four large cards (Voyage, Auto, Santé, Convention) right on the home screen.
@@ -45,6 +49,30 @@ Source: screen recording `IRIS-intro-2.mov` (59 s, 20 Oct 2026). Frames below ar
 - **Catalogue → "Souscrire"**, prefilled with the product; compare two products side by side.
 - **Instant language switch** that remembers the choice; a 5-step tour plus contextual tips.
 - **Status colors by meaning**: neutral when the count is 0.
+
+## Recording 2 — starting a subscription from home (17 s)
+
+Flow seen: product card on home → **"Choisissez le type de contrat"** modal (Voyage: Individuel / Famille / Groupe · Auto: Mono / Flotte) → for Convention, **"Choisissez la convention"** modal (16 conventions, search, radio list with "à partir de" price) → "Continuer vers la souscription". The recording stops before the subscription form.
+
+### Strengths
+- The segment choice is plain and short, with one line of explanation per option.
+- The convention picker has search, an available count, a price for each item, a selection summary in the footer ("Sélection : Fid Sanlam Sante"), and a primary button that stays disabled until something is picked.
+
+### Issues
+13. **The convention is chosen before the client is known.** A convention depends on who the client is (their employer or association), yet the agent must pick it from a list of 16 before identifying the client. *H2, H5 · 3*
+14. **An extra modal before any real work**: card → type modal → (convention modal) → form. The Individuel / Famille / Groupe choice could live inside the form, for example inferred from the number of insured people. *H7 · 2*
+15. **Two affordances on each type card**: the whole card highlights on hover, but the action is a small underlined "Souscrire" link plus an arrow. *H4 · 2*
+16. **The convention list mixes categories** (Voyage, Santé and Auto conventions together) with no grouping or filter, although the catalogue has category chips. The names are long and look alike. *H4, H6 · 2*
+17. **Number formats are inconsistent**: "150,65 MAD" here, but "148.64" and "1,296" in the catalogue. *H4 · 1*
+18. **Hover and selected rows look the same** (light blue), so only the small radio button shows the selection. *H1 · 1*
+19. **The modal size and position change per product**, and the "Souscrire" links don't line up when a description wraps (Groupe). *H8 · 1*
+
+### Opportunities
+- **Client first, product second**: once the client is identified, IRIS suggests eligible products and conventions (employer → convention).
+- **Type inside the form**: a segmented control (Individuel / Famille / Groupe) in step 1 instead of a modal.
+- **One affordance**: the whole card is clickable.
+- **Convention picker**: grouped by category, recent or most-used first, searchable by organisation.
+- **One number format**, fr-MA style (`1 296,00 MAD`).
 
 ## Open questions
 - Is Arabic planned? The design tokens include Almarai, but the language menu only offers French and English.
