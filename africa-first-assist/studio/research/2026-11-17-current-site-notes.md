@@ -3,6 +3,8 @@ Date: 2026-11-17
 Type: DESK NOTES. This is not user research and must not be cited as evidence of user needs.
 Author: ops (attempted fetch only)
 
+> **UPDATE 2026-11-17 (research):** access to www.africafirstassist.com now works (curl). The desk review is done: see `studio/research/2026-11-17-desk-review-current-site.md`. Most items in the list below are now answered there, with source URLs. Still blocked: the subscription site voyage.africafirstassist.com (proxy 403), so the online purchase steps and payment methods are still unknown. The sections below are kept as the original record of the failed first attempt.
+
 ## Fetch result
 - Target: https://www.africafirstassist.com (also tried https://africafirstassist.com)
 - Result: FAILED. The session's egress proxy refused the connection (CONNECT 403, "host not allowed for this session"). WebFetch returned ENOTFOUND for the same reason.
