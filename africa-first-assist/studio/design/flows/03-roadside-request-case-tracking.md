@@ -1,11 +1,11 @@
 # 03 — Roadside assistance request and case tracking (MVP)
 
 Status: DRAFT pitch input. Assumptions (A). Open questions (Q).
-Roadmap features: **R1** roadside request with location, **R6** vehicle profile (Should), **X4** case tracking (status steps, not a live map), **X7** push + SMS [RM 2.4]. Live map **R2** is V2. Model C: this flow is a self-contained module on the shared engine (partner embed pilot = V2).
+Roadmap features: **R1** roadside request with location, **R6** vehicle profile (MVP Should; without it the vehicle comes from the policy or is typed), **X4** case tracking (status steps, not a live map), **X7** push + SMS [RM 2.4]. Live map **R2** is V2. Model C: this flow is a self-contained module on the engine API (API1, MVP Must); partner embed pilot = V2.
 Scope assumption: Isaaf Auto clients and one pilot partner [RM 4.3], subject to agreement.
 
 ## Goal
-A driver with a covered vehicle sends a roadside request **in under a minute (target, to test)**, in **4 short screens, prefilled** (safety, problem, location, summary), and then sees each step of the case without calling. The pitch uses this wording, not "3 taps".
+A driver with a covered vehicle gets to **request sent in under a minute (target, to test)** [RM 4.3 item 4], in **4 short screens, prefilled** (safety, problem, location, summary), and then sees each step of the case without calling. The pitch uses this wording, not "3 taps".
 
 ## Entry points
 - Help tab: "Roadside help".
@@ -81,7 +81,7 @@ flowchart TD
 E-POL (vehicle not found: add, send anyway, call), E-GPS (manual address or agent asks), E-LOAD (location, sending, timeline), E-NET (saved, call or SMS), E-COV (pre-check flags, human decides; refused case ends in the timeline, no rating), delay past ETA, user cancel. E-HRS: dispatch assumed 24/7 (Q); status updates may be slower at night (A).
 
 ## Success criteria
-- Time from opening the flow to "request sent": under 1 minute for most users (target to test in usability sessions, then confirm with pilot data).
+- Request sent in under a minute (target, to test): time from opening the flow to "request sent", measured in usability sessions, then in pilot data.
 - Time to assistance: request → provider dispatched, and → on site [RM 6]. Target after baseline.
 - Share of roadside cases opened in app (digital case share) for the pilot partner.
 - "Where is my provider?" calls per case (call deflection) [RM 5.5].
@@ -95,7 +95,7 @@ E-POL (vehicle not found: add, send anyway, call), E-GPS (manual address or agen
 - Q5. Pilot partner: AFA brand, partner brand, or co-brand on these screens? [RM 5.2]
 
 ## Changelog 2026-11-18 (critic fixes)
-- Finding 10: steps cut from 6 to 4 screens (vehicle and details merged into the summary, prefilled). Goal reworded: "request in under a minute (to test)", not "3 taps".
+- Finding 10: steps cut from 6 to 4 screens (vehicle and details merged into the summary, prefilled). Goal reworded to match RM 4.3: "request sent in under a minute (target, to test)", not "3 taps".
 - Finding 12: dead end "vehicle not on a cover" now has exits (add policy, send anyway, call 24/7). E-LOAD states for location, sending and timeline. Refused and cancelled cases end in the timeline.
 - Finding 9: rating made optional and skippable; not shown on refused or cancelled cases.
 - Finding 14: plate display follows `rtl-conventions.md` R4 (open question closed provisionally).

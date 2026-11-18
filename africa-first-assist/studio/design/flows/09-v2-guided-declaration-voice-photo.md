@@ -10,7 +10,7 @@ A person describes what happened in their own words, in Darija, French or Arabic
 ## Entry points
 - Help tab: "Tell us what happened" (voice or photo).
 - Roadside and claim flows: "Describe by voice instead".
-- Not from SOS. Emergencies always go to a person (flow 02).
+- Not from SOS. Emergencies always go to a person, call first (flow 02).
 
 ## Flow
 
@@ -22,7 +22,7 @@ flowchart TD
     D0 -->|"No E-NET"| E0["Saved on device. Call 24/7 or send later"]
     D0 -->|"Yes"| V3["Speech to text, language detected"]
     V3 --> G1{"Emergency or injury words?"}
-    G1 -->|"Yes"| SOS[["Flow 02 SOS"]]
+    G1 -->|"Yes"| SOS[["Flow 02 SOS, call first"]]
     G1 -->|"No"| D1{"Transcript confidence high?"}
     D1 -->|"No"| E1["Agent callback with the recording"]
     D1 -->|"Yes"| V4["AI fills case: type, place, vehicle or trip, policy"]
@@ -39,7 +39,7 @@ flowchart TD
 ## Step table (short)
 | # | Screen | User action | System response | AI involvement / human-in-the-loop | Notes |
 |---|---|---|---|---|---|
-| 1 | GD-01 Notice | Reads | Pilot label, consent for voice data | — | Voice and photos are personal data (09-08) |
+| 1 | GD-01 Notice | Reads | Pilot label, consent for voice data | — | Voice and photos are personal data under law 09-08 (to confirm by legal counsel) |
 | 2 | GD-02 Capture | Speaks, types, adds photos | Records; on-device where possible (A) | — | Text input always available (deaf, noisy places). Large record button with label |
 | 3 | Transcription | — | Speech to text in Darija / FR / AR | AI. Low confidence → human callback | Darija quality is the main risk; no benchmark source [BM 4c] |
 | 4 | Structuring | — | Fills case fields | **AI2.** Fields marked "filled by AI" | — |
@@ -58,3 +58,7 @@ E-NET (saved, call), E-GPS (one question), low-confidence transcript (callback),
 - Q1. Darija speech models: which vendor, where hosted (CNDP)? [RM 5.4]
 - Q2. Consent to use pilot recordings to improve the model?
 - Q3. Which line pilots first: roadside or travel claims?
+
+## Changelog 2026-11-18 (critic fixes)
+- Finding 7: law 09-08 statement marked "to confirm by legal counsel".
+- Finding 2: SOS links point to the call-first flow 02. Still V2 per RM 4.3 (AI2 and Darija voice).

@@ -1,7 +1,7 @@
 # 05 — Travel claim declaration with documents, and tracking (MVP)
 
 Status: DRAFT pitch input. Assumptions (A). Open questions (Q).
-Roadmap features: **T7** travel claims, **X4** case declare and track, **X7** notifications, **X11** resumable uploads, **X13** consent [RM 2.1, 2.2, MVP item 4]. Today: free-text web form, no upload, no tracking [DR A7, O-U9].
+Roadmap features: **T7** travel claims, **X4** case declare and track, **X7** notifications, **X11** resumable uploads, **X13** consent [RM 4.3 item 5]. Model C: self-contained module on the engine API (API1); partner embed pilot = V2. Today: free-text web form, no upload, no tracking [DR A7, O-U9].
 
 ## Goal
 A traveller sends a complete claim with all documents once, and sees where it stands until payment, without calling.
@@ -78,7 +78,7 @@ flowchart TD
 | 8 | CLM-07 Review | Reads summary, accepts declaration of truth | Records acceptance with version. Shows health consent status (given at CLM-02a), with a link to withdraw it in the consent centre | None | Consent is not asked here any more: it was asked before upload |
 | 9 | Submit | — | E-LOAD "Sending your claim", then reference, SMS, push. Timeout: draft kept, retry | Handler (human) owns the claim | Confirmation announced |
 | 11 | Close | Optionally answers one question | Feedback only on paid claims; none on refused or bereavement cases (00 shared rule 8) | None | Skippable, never a pop-up |
-| 10 | CASE-02 Timeline | Reads status; adds missing docs; calls | Status events from case system | **Handler decides** acceptance, amount, refusal. AI9 copilot may summarise the file for the handler (flow 08). Fraud scoring AI7 is V3; never an automatic refusal | Each step has a date. Refusal shows reason and contest route |
+| 10 | CASE-02 Timeline | Reads status; adds missing docs; calls | Status events from case system | **Handler decides** acceptance, amount, refusal. AI9 copilot may summarise the file for the handler (flow 08) once claims join the copilot; MVP pilot proposed on roadside non-injury only. Fraud scoring AI7 is V3; never an automatic refusal | Each step has a date. Refusal shows reason and contest route |
 
 ## Edge states covered
 Health consent declined (person or continue without medical files), death of a traveller (human route), E-LOAD (submit), E-COV (not in cover, outside dates: submit for review), E-NET (queued uploads, drafts), upload errors, missing documents loop, E-HRS (review time set), ongoing emergency (to SOS). E-POL: cover must be linked first (flow 01).

@@ -23,7 +23,7 @@ A covered person can answer "am I covered, and who do I call?" in two taps, anyw
 ```mermaid
 flowchart TD
     W0(["Wallet tab"]) --> D0{"Network?"}
-    D0 -->|"Yes"| W1["Sync covers and documents"]
+    D0 -->|"Yes"| W1["Sync covers and documents: E-LOAD, cached view shown while loading"]
     D0 -->|"No E-NET"| W2["Offline banner: last updated date and time"]
     W1 --> D1{"Any cover?"}
     W2 --> D1
@@ -33,9 +33,9 @@ flowchart TD
     W4 --> W5["Limits in plain words"]
     W4 --> W6["Documents: certificate PDF, general conditions"]
     W4 --> W7["Ask about my cover"]
-    W7 --> AIA[["Flow 07 AI assistant, online only"]]
-    W4 --> W8["Request help: SOS, roadside, claim"]
-    W4 --> W9["Add to Apple or Google Wallet"]
+    W7 --> AIA[["Flow 07 assistant mode b, my cover, online only"]]
+    W4 --> W8["Request help: SOS call first, roadside, claim"]
+    W4 --> W9["Add to Apple or Google Wallet: MVP Should"]
     W1 -->|"Cover removed by partner E-POL"| E2["Cover no longer available. Why and who to ask"]
     W3 -->|"Expired E-COV"| E3["Greyed with end date. Renew if travel"]
     W4 --> W10["WAL-03 Travel companion"]
@@ -54,13 +54,13 @@ flowchart TD
 ## Step table
 | # | Screen | User action | System response | AI involvement / human-in-the-loop | Notes (accessibility, FR/AR RTL) |
 |---|---|---|---|---|---|
-| 1 | Wallet tab | Opens | Syncs if online; else shows cached data with "last updated" | None | Offline banner announced once, not on every screen change |
+| 1 | Wallet tab | Opens | Shows cached data at once, syncs in the background if online (E-LOAD: "Updating" with last-updated time; timeout keeps the cached view) | None | Offline banner announced once, not on every screen change |
 | 2 | WAL-01 List | Picks a cover | Active covers first; partner covers labelled with partner name | None | Each card readable as text: product, holder, dates, status |
 | 3 | WAL-02 Detail | Reads card | Digital card: name, policy number, validity, 24/7 number, QR | None | Card is real text, not an image. QR has the number as text. Policy number LTR in AR. Brightness boost when showing QR (A) |
 | 4 | Limits | Reads | Limits in plain words from product wording | Plain-language texts written and approved by people, not generated live | Currency per product (fix mixed currencies [DR O-U5]) |
-| 5 | Documents | Opens PDF, shares | Cached PDF opens offline | None | Tagged PDF **Q**. Share sheet native |
+| 5 | Documents | Opens PDF, shares | Cached PDF opens offline | None | **Vendor requirement:** tagged, accessible PDF (PDF/UA, A) is an acceptance criterion for the certificate engine; key data also shown as text on WAL-02. Share sheet native (WhatsApp only as an OS share target) |
 | 6 | Ask about my cover | Opens AI1 | Flow 07 (online only) | See flow 07 | Disabled offline with reason, not hidden |
-| 7 | Add to Wallet pass | Taps | Generates pass (X2, Should) | None | Pass includes 24/7 number |
+| 7 | Add to Wallet pass | Taps | Generates pass (X2 pass, MVP Should) | None | Pass includes 24/7 number |
 | 8 | WAL-03 Companion | Opens | Country from GPS or picked | None | Country list searchable in FR and AR |
 | 9 | Country page | Reads, taps to call | Numbers and steps from the offline pack; territory check | None | Steps as numbered lists. Phone numbers as tap-to-call buttons with full number in text |
 | 10 | Stale data | — | If last sync > 7 days, warn (A) | None | Warning text, not colour only |
@@ -79,4 +79,10 @@ E-NET (cached view), E-GPS (pick country), E-COV (expired cover, country outside
 - Q2. Who writes and approves plain-language limits per product?
 - Q3. Who maintains local emergency numbers per country, and how often?
 - Q4. Is a digital card accepted by providers and hospitals as proof of cover?
-- Q5. Apple/Google Wallet pass in MVP or V2?
+- Q5. Resolved per RM 4.3: Apple/Google Wallet pass is MVP Should (first to cut).
+
+## Changelog 2026-11-18 (critic fixes)
+- Finding 13: tagged certificate PDF written as a vendor requirement; key data also shown as text.
+- Finding 12: E-LOAD on sync (cached view first, timeout keeps it).
+- Finding 10: Wallet pass marked MVP Should per RM 4.3; Q5 closed.
+- Finding 11: entry to the assistant labelled mode (b), my cover.

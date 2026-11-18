@@ -4,13 +4,13 @@ Date: 2026-11-18
 Author: strategy (flows for the pitch package)
 Status: **DRAFT pitch input. Not approved.** Gate 1 (brief) is not passed. These are task flows at screen/step level, not visual UI. No user research exists yet: every structural choice below is an **assumption** to test.
 
-Sources: feature IDs from `studio/strategy/2026-11-18-app-features-mvp-roadmap.md` [RM]. Desk research [REC], [BM], [DR] as cited there. Journeys live in `studio/research/2026-11-18-journey-maps.md`. Decisions from `studio/decisions.md`. MVP/V2 labels follow the canonical scope table in RM; where a flow and RM disagree, RM wins.
+Sources: feature IDs from `studio/strategy/2026-11-18-app-features-mvp-roadmap.md` [RM]. Desk research [REC], [BM], [DR] as cited there. Journeys live in `studio/research/2026-11-18-journey-maps.md`. Decisions from `studio/decisions.md`. MVP/V2 labels follow the canonical scope list in RM section 4.3 ("the one MVP list"); where a flow and RM 4.3 disagree, RM 4.3 wins.
 
 ## Decided (studio lead, 2026-11-18, `decisions.md`)
-- **Distribution model C.** AFA-branded app + the same assistance engine exposed to partners. Flows 02 (SOS), 03 (roadside + tracking) and 05 (claim + tracking) are designed as self-contained modules on that engine, so a partner can embed them. **Partner embed pilot = V2.**
-- **AI lead = agent copilot (AI9) + FR/AR cover assistant (AI1 text).** Both are MVP pilots (flows 08 and 07). Darija voice stays V2 (flow 09).
-- **WhatsApp = optional channel**, not core scope. Where a flow shows WhatsApp, it is only as a share target or an optional add-on.
-- **Smart document check = OCR + rules** (AI5: passport OCR + Schengen rule check). It is not presented as AI.
+- **Distribution model C.** AFA-branded app + the same assistance engine exposed to partners. The engine with its API (API1) is **MVP Must**; the AFA app is its first client. Flows 02 (SOS), 03 (roadside + tracking) and 05 (claim + tracking) are designed as self-contained modules on that engine, so a partner can embed them. **Partner embed pilot = V2.**
+- **AI lead = agent copilot (AI9) + FR/AR cover assistant (AI1 text).** Both are MVP Must pilots. AI9: one team (proposed: roadside non-injury), flow 08. AI1: mode (a) general product questions without login, mode (b) own cover after login, available 24/7, abroad or active-trip users handed to the 24/7 line, flow 07. Darija voice stays V2 (flow 09).
+- **WhatsApp (W1) = optional add-on outside core scope**, priced separately, on the same engine API. Where a flow shows WhatsApp, it is only as an OS share target or that add-on.
+- **Smart document check (OCR + rules)** (AI5: passport OCR + Schengen rule check) is **MVP Should**. It is not presented as AI.
 - **Medical red-flag routing is a case-system rule** and agent protocol. It works with or without the copilot. The copilot can only add alerts (flow 08).
 
 ## How to read this folder
@@ -20,17 +20,17 @@ Sources: feature IDs from `studio/strategy/2026-11-18-app-features-mvp-roadmap.m
 | rtl-conventions.md | FR/AR and RTL defaults: digits, plates, dates, SOS position | MVP, provisional | X9, X10 |
 | 01-onboarding-cover-activation.md | Onboarding, OTP, activate cover, consent centre | MVP | X1, X13, X9, X10 |
 | 02-sos-one-tap.md | SOS call first, with and without login, for someone else, bereavement route | MVP | X3, X7, X11 |
-| 03-roadside-request-case-tracking.md | Roadside request and status tracking | MVP | R1, R6, X4, X7 |
-| 04-buy-travel-cover-visa-certificate.md | Quote, passport scan, smart document check, card payment, certificate | MVP | T1, T2, AI5, X6, X2 |
+| 03-roadside-request-case-tracking.md | Roadside request and status tracking | MVP (R6 Should) | R1, R6, X4, X7 |
+| 04-buy-travel-cover-visa-certificate.md | Quote, passport scan, smart document check, card payment, certificate | MVP (AI5 Should) | T1, T2, AI5, X6, X2 |
 | 05-travel-claim-declaration.md | Travel claim with consent, documents and tracking | MVP | T7, X4, X7, X13 |
 | 06-policy-wallet-offline-companion.md | Wallet and offline travel companion | MVP | X2, T3, X11 |
-| 07-ai-cover-assistant.md | AI cover assistant, FR/AR text, public and cover modes, hand-off | MVP pilot | AI1 (text) |
-| 08-agent-copilot.md | Backstage: agent console, red-flag rule, copilot | MVP pilot | AI9 |
+| 07-ai-cover-assistant.md | AI cover assistant, FR/AR text, mode (a) general questions and mode (b) my cover, hand-off | MVP Must pilot | AI1 (text) |
+| 08-agent-copilot.md | Backstage: agent console, red-flag rule, copilot | MVP Must pilot | AI9, API1 |
 | 09-v2-guided-declaration-voice-photo.md | Guided declaration by voice/photo, Darija pilot | **V2** | AI2, AI1-voice |
 
 ## App map
 
-Legend: solid = MVP. Dashed grey = V2. Green = reachable without login. The SOS bar is on every screen, logged in or not, including the app lock screen.
+Legend: solid = MVP (Must, or Should where marked). Dashed grey = V2. Green = reachable without login. In MVP, death and medical needs are covered by SOS and the phone line; the in-app funeral and medical flows are V2. The SOS bar is on every screen, logged in or not, including the app lock screen.
 
 ```mermaid
 flowchart TD
@@ -46,7 +46,7 @@ flowchart TD
         SOSG["SOS guest, call first (X3)"]
         NUMS["Emergency numbers, offline (T3, X11)"]
         QUOTE["Travel quote, browse only (T1)"]
-        ASKPUB["Ask a question: assistant, general product questions (AI1 public mode)"]
+        ASKPUB["Ask a question: assistant mode a, general product questions (AI1)"]
         LOGIN["Log in / sign up with OTP (X1)"]
         LEGAL["Privacy notice and terms (X13)"]
     end
@@ -87,12 +87,12 @@ flowchart TD
 
     WALLET --> COVER["Cover detail: digital card, limits, documents (X2)"]
     COVER --> PDF["Certificate PDF and share (T2)"]
-    COVER --> ASK["Ask about my cover: assistant FR/AR text, cover mode (AI1)"]
+    COVER --> ASK["Ask about my cover: assistant mode b, own cover (AI1)"]
     ASK -->|"Hand-off"| HUMAN["Call 24/7 or callback, per flow 07 rules"]
     ASKPUB -->|"Hand-off"| HUMAN
     WALLET --> PASS["Add to Apple / Google Wallet (X2, Should)"]
 
-    TRAVEL --> BUY["Buy cover: quote, passport scan with smart document check, pay (T1, AI5, X6)"]
+    TRAVEL --> BUY["Buy cover: quote, pay (T1, X6). Passport scan with smart document check (AI5, Should)"]
     BUY --> PDF
     TRAVEL --> COMP["Travel companion, offline (T3, X11)"]
     COMP --> NUMS
@@ -100,18 +100,20 @@ flowchart TD
     PROFILE --> CONSENT["Consent and privacy centre (X13)"]
     PROFILE --> LANGSET["Language, text size, SOS confirm setting, notifications (X9, X10, X7)"]
     PROFILE --> VEH["My vehicles (R6, Should)"]
-    PROFILE --> AGENCY["Agency finder (X12, Could)"]
 
     subgraph V2["V2: not in MVP"]
         TRACK["Live provider map and ETA (R2)"]
         HOMEREQ["Home emergency request (H1, H2)"]
-        MED["Medical request and teleconsultation (M1, M2)"]
+        MED["Medical request, teleconsultation, care finder (M1, M2, M4)"]
         FUN["Funeral declaration in app, human-led (F1, F2)"]
         CHAT["Chat with a person (X5)"]
         FAM["Family and dependants (X8)"]
         ALERTS["Travel alerts (T4, AI6)"]
         VOICE["Guided declaration by voice/photo, Darija pilot (AI2, AI1-voice)"]
         EMBED["Partner embed pilot: SOS, roadside, claim modules in a partner app"]
+        AGENCY["Agency and provider finder (X12)"]
+        R4["Mobility continuation (R4)"]
+        T6["Renewal and student reminders (T6)"]
     end
 
     CASES -.-> TRACK
@@ -122,9 +124,12 @@ flowchart TD
     ASK -.-> CHAT
     PROFILE -.-> FAM
     TRAVEL -.-> ALERTS
+    PROFILE -.-> AGENCY
+    CASES -.-> R4
+    TRAVEL -.-> T6
 
     subgraph BACK["Backstage, not in the app"]
-        ENGINE["Assistance engine and case system: red-flag rules (model C)"]
+        ENGINE["Assistance engine with API, API1 MVP Must: cases, SOS intake, status, cover lookup, red-flag rules"]
         CONSOLE["Agent console + copilot (AI9)"]
     end
     SOSG --> ENGINE
@@ -140,7 +145,7 @@ flowchart TD
     classDef v2 fill:#f2f2f2,stroke:#9e9e9e,stroke-dasharray: 5 5,color:#555
     classDef back fill:#e8eaf6,stroke:#3949ab
     class WELCOME,LOCK,SOSG,NUMS,QUOTE,ASKPUB,LOGIN,LEGAL pub
-    class TRACK,HOMEREQ,MED,FUN,CHAT,FAM,ALERTS,VOICE,EMBED v2
+    class TRACK,HOMEREQ,MED,FUN,CHAT,FAM,ALERTS,VOICE,EMBED,AGENCY,R4,T6 v2
     class ENGINE,CONSOLE back
 ```
 
@@ -195,7 +200,7 @@ flowchart TD
 ## Open questions (IA level)
 - Q-IA1. Partner-only users (S2): do they see the Travel tab? Do they see AFA or the partner brand (co-branding) [RM 5.2]? Decide before UI.
 - Q-IA2. Resolved provisionally: Western digits 0–9 in FR and AR (`rtl-conventions.md` R1). To test with users.
-- Q-IA3. English UI at launch: yes or no [RM 8.5]?
+- Q-IA3. English UI at launch: MVP Should per RM 4.3, depends on translation budget. Confirm with client.
 
 ## Changelog 2026-11-18 (critic fixes)
 - Finding 4: decided items moved out of open questions into "Decided" (model C with V2 partner embed pilot, AI lead, WhatsApp optional, smart document check = OCR + rules, red-flag rule). Old Q-IA4 and Q-IA5 removed.
@@ -205,4 +210,4 @@ flowchart TD
 - Finding 9: "A relative has died" route; rule 8 on ratings.
 - Finding 11: assistant public mode before login; E-HRS hand-off to 24/7 abroad.
 - Finding 7: rule 9, legal statements "to confirm by legal counsel".
-- Finding 10: MVP/V2 labels defer to the canonical scope table in RM.
+- Finding 10: aligned with the canonical MVP list (RM 4.3): API1 engine MVP Must drawn; X12 agency finder, R4, T6 moved to V2; M4 added to V2 medical; AI5, R6, Wallet pass, English UI marked Should; AI1 modes (a) and (b); AI9 pilot proposed on roadside non-injury; W1 WhatsApp optional add-on.

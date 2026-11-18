@@ -1,7 +1,7 @@
 # 02 — SOS, call first (MVP)
 
 Status: DRAFT pitch input. Assumptions (A). Open questions (Q). Redrawn 2026-11-18 after critic finding 2 (critical).
-Roadmap features: **X3** SOS one-tap, **X7** push + SMS fallback, **X11** offline essentials, **X1** guest SOS [RM 2.1]. Backstage: case-system rules and **AI9** copilot (flow 08). Distribution model C: this flow is a self-contained module on the shared assistance engine, so a partner can embed it (partner embed pilot = V2).
+Roadmap features: **X3** SOS one-tap, **X7** push + SMS fallback, **X11** offline essentials, **X1** guest SOS [RM 2.1]. Backstage: case-system rules and **AI9** copilot (flow 08). [RM 4.3 item 3]. Distribution model C: this flow is a self-contained module on the assistance engine API (API1, MVP Must), so a partner can embed it (partner embed pilot = V2). In MVP, death and medical needs are handled through SOS and the phone line; in-app funeral and medical flows are V2.
 
 ## Goal
 In one tap and at most one confirm, a person in trouble is on the phone with a human at AFA's 24/7 line. Location, identity and the case follow in the background. Nothing the app does can delay the call.
