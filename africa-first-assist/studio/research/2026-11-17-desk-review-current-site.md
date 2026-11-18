@@ -37,7 +37,7 @@ Not fetched (out of the ~12 page budget): Assistance Médicale, Véhicules, Domi
 
 ### A1. Company and positioning
 - Name: Africa First Assist. Tagline on home: "L'expertise d'une assistance engagée à vos côtés, au Maroc et dans le monde." [S1]
-- "Filiale du Groupe SANLAMALLIANZ" [S9]. History: created 1981 as ISAAF Mondial Assistance; became SAHAM Assistance in 2014; bought by SANLAM 2018; "SAHAM Assistance devient Africa First Assist" (2019) [S9]. The LinkedIn link still points to `linkedin.com/company/saham-assistance/` [S1].
+- "Filiale du Groupe SANLAMALLIANZ" [S9]. History: created 1981 as ISAAF Mondial Assistance; became SAHAM Assistance in 2014; bought by SANLAM 2018; "SAHAM Assistance devient Africa First Assist" [S9] — rename in 2021 per AFA timeline and press (2019 was an innovation award; corrected 2026-11-18, see 2026-11-18-recognition-afa.md). The LinkedIn link still points to `linkedin.com/company/saham-assistance/` [S1].
 - Claims: 8 million clients/beneficiaries in 20 African countries [S9]; "Présence dans plus de 20 pays en Afrique" [S1]; 460 000 providers worldwide [S1, S2, S9]; 24/7 assistance [S1, S9]; ISO 9001 v2015 and SERVICERT certified [S9]; "96,3% de taux de satisfaction client", "97% des appels pris en moins de 5 secondes" [S9] (no source or date given for these figures).
 
 ### A2. What they offer
