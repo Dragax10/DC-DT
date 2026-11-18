@@ -1,59 +1,101 @@
-# Status — Africa First Assist — Assistance website & travel insurance flow
-Last updated: 2026-11-17 (research — desk review of current site done)
+# Status — Africa First Assist — Mobile app for AFA clients (pitch stage)
+Last updated: 2026-11-18 (ops — rewritten for the new scope)
 
-PHASE: Strategy (project kickoff; desk review of current site done)
-NEXT GATE: Gate 1 — Problem framing — not started (brief.md is an empty template)
+Scope: changed on 2026-11-18 from "assistance website + travel insurance flow" to a **mobile app for AFA's clients** (decisions.md). Pitch package comes before the formal brief. AI built into workflows; target 1M+ clients; distribution model C (AFA app + partner embed/SDK).
+
+PHASE: Strategy — pitch package in final assembly. Stakeholder slide deck being built by the studio lead's assistant; **not yet approved**.
+NEXT GATE: Gate 1 — Problem framing — not started (brief.md still the old website template). Before that: **human approval of the deck** (client-delivery rule).
 
 ## Path
-Strategy → [GATE 1 problem framing] → Research → Flows → UI → [GATE 2 chosen direction, after UI directions] → Critic → [GATE 3 final handoff] → Handoff
+Strategy (pitch package → client pitch meeting → discovery → brief) → [GATE 1 problem framing] → Research → Flows → UI → [GATE 2 chosen direction] → Critic → [GATE 3 final handoff] → Handoff
+
+## Done (pitch package inputs, all DRAFT, not client-approved)
+| Date | Owner | Output |
+|------|-------|--------|
+| 2026-11-17 | research | Desk review of current website — studio/research/2026-11-17-desk-review-current-site.md (+ 2026-11-17-current-site-notes.md) |
+| 2026-11-18 | studio lead | Scope change + pitch decisions logged — studio/decisions.md |
+| 2026-11-18 | research | Recognition (company reconnaissance) of AFA — studio/research/2026-11-18-recognition-afa.md |
+| 2026-11-18 | research | National + international benchmark of insurance/assistance apps — studio/research/2026-11-18-benchmark-apps.md |
+| 2026-11-18 | strategy | Features, AI layer, canonical MVP (§4.3), path to 1M+ (§6), delivery plan (§7), KPIs (§8), open questions (§9) — studio/strategy/2026-11-18-app-features-mvp-roadmap.md |
+| 2026-11-18 | research | Proto-personas, journey maps, SOS service blueprint, research plan (§8) — studio/research/2026-11-18-journey-maps.md |
+| 2026-11-18 | strategy | App map + 9 MVP/V2 task flows + RTL conventions — studio/design/flows/00-app-map.md … 09-v2-guided-declaration-voice-photo.md, rtl-conventions.md |
+| 2026-11-18 | critic | Pitch package review (verdict: Not ready; 3 critical, 8 major, 3 minor, 1 polish) — studio/reviews/2026-11-18-pitch-package.md |
+
+## Critic findings — fix status (studio/reviews/2026-11-18-pitch-package.md)
+| File set | Findings | Status |
+|----------|----------|--------|
+| Strategy roadmap | #1, #3, #4, #6, #7, #10, #11 | FIXED (changelog in roadmap file) |
+| Research: recognition, benchmark | #1, #6, #15 (BM wording) | FIXED (changelogs in each file) |
+| Flows 00–09 + rtl-conventions.md | #2, #4, #8, #9, #11, #12, #13, #14 | FIXED (changelogs in each file) |
+| Journey maps | #4, #5 (wrong flow links), #9, #10, #11a | IN PROGRESS — research fixing now |
+| status.md | #15 | FIXED (this rewrite) |
+Re-check: critic to confirm fixes once journey maps are done (task 2).
 
 ## Open tasks (near term)
 | # | Owner | Task | Input → Output | Done when |
 |---|-------|------|----------------|-----------|
-| 1 | human | ~~Unblock access to the client site~~ **DONE 2026-11-17** — www.africafirstassist.com readable with curl. Follow-up still open: voyage.africafirstassist.com (online subscription site) is still refused by the proxy (403); allow it or get screenshots/test account from the client | — → network access | DONE for www; voyage. subdomain still blocked |
-| 2 | human | Hold the kickoff with the client (studio lead). Bring the open-questions list below | open questions (this file) → studio/meetings/2026-11-xx-kickoff.md (scribe) | each open question is answered, or has an owner and a due date |
-| 3 | scribe | Write up the kickoff notes and log the decisions | kickoff conversation → studio/meetings/<date>-kickoff.md, new rows in decisions.md | notes cover attendees, answers, decisions and actions; every decision has a source |
-| 4a | research | **DONE 2026-11-17** — Desk review of the current site | site access → studio/research/2026-11-17-desk-review-current-site.md | done: offer, prices, buy paths, channels, languages, markets, legal, nav, UX/a11y flags, sourced. Gap: online subscription flow not seen (subdomain blocked) |
-| 4b | research | Competitor/benchmark scan of 3–5 travel insurance purchase flows (desk only, labelled as such); plus walkthrough of voyage.africafirstassist.com once reachable | desk review → studio/research/2026-11-xx-benchmark.md | 3–5 benchmark flows with links; current online flow mapped step by step; facts kept separate from assumptions |
-| 5 | strategy | Draft the brief: problem statement, users, goals, metrics, scope, assumptions and open questions | kickoff notes, desk review → studio/brief.md | every section filled in; every fact sourced; assumptions listed separately; in/out of scope explicit (e.g. is it an online purchase end to end or lead generation?) |
-| 6 | human | GATE 1 sign-off on problem framing | studio/brief.md | BLOCKED — needs human sign-off. Approve the problem statement, target users and markets, scope (purchase vs lead gen, which products), success metrics, constraints. Logged in decisions.md |
+| 1 | research | Finish critic fixes on journey maps | review #4, #5, #9, #10, #11a → research/2026-11-18-journey-maps.md | All flow links point to real files (01–08), 08-agent-copilot.md linked in §7, V2 flows marked "not drawn", scope labels match roadmap §4.3; changelog added |
+| 2 | critic | Verify all critic fixes across the package, and review the deck | reviews/2026-11-18-pitch-package.md, roadmap, research, flows, deck → reviews/2026-11-18-pitch-package-recheck.md | Each finding marked closed or open; deck checked against "Deck vs appendix" list; no unsourced number or legal claim on a slide |
+| 3 | studio lead's assistant | Finish the stakeholder slide deck (12–15 slides + appendix) | roadmap §4.3, §4.5, §6, §7, §8; review "Deck vs appendix"; flows 02, 03 → deck file (path to add here when saved) | Every number has a source and "(to confirm)"; INTERNAL items (roadmap §10, JM §10 flags, market rank) excluded |
+| 4 | human | Decide the open studio-lead items before the deck is final | roadmap §10 "Still open" → decisions.md rows | Pilot partner in MVP (yes/no); FR+AR Must, EN Should confirmed; AI9 pilot team; proposed "1M+ user" definition; deck depth |
+| 5 | human | Manual app-store check of **My Wafa, MyRMA, MyAXA Maroc, Sanlam Maroc** listings (blocked from this session) | Store listings → note added to research/2026-11-18-benchmark-apps.md (by research, from human's notes) | Features (SOS, geolocation, case status, tow tracking, teleconsultation), installs, rating, last update recorded with date; differentiator slide still holds or is reworded. **Before the pitch meeting** |
+| 6 | human | **APPROVE THE DECK** before anything goes to AFA | deck + critic recheck (task 2) | **BLOCKED — needs human sign-off.** Explicit OK from the studio lead logged in decisions.md. Nothing is sent to AFA without it; studio drafts, lead sends |
+| 7 | human | Hold the client pitch meeting with AFA leadership | approved deck + client questions below → meeting | Date set; questions 1–8 asked at minimum |
+| 8 | scribe | Write up the pitch meeting; log decisions | transcript/notes → meetings/<date>-afa-pitch.md, new rows in decisions.md | Attendees, answers per question, decisions with source, actions with owner and date |
+| 9 | human (+ strategy prep) | Kickoff / discovery with AFA: get answers and data for the questions below | question list → meetings/<date>-kickoff.md (scribe) | Each question answered, or has a client owner and due date; data request sent by the lead |
+| 10 | research (+ human for access) | 2–3 partner interviews (e.g. Sanlam Maroc and other insurer partners) on model C, co-brand vs SDK, contact rights | roadmap §5.2, §9.3; JM §8 → research/<date>-partner-interviews-guide.md, then synthesis | Guide approved by lead; partner contacts given by AFA; synthesis says whether model C holds. Note: partner contact goes through AFA/lead, never by agents |
+| 11 | strategy | Write the brief for the mobile app | kickoff + pitch notes, roadmap, research → studio/brief.md (replace old website template) | Every section filled; facts sourced; assumptions separate; in/out scope explicit; MVP from roadmap §4.3 |
+| 12 | human | **GATE 1 sign-off on problem framing** | studio/brief.md | **BLOCKED — needs human sign-off.** Approve problem statement, segments, markets/languages, MVP scope, distribution model, 1M+ definition, success metrics, constraints. Logged in decisions.md |
+| 13 | research | User research plan (after Gate 1 only) | brief, JM §8, roadmap §9.3 → research/<date>-research-plan.md | Questions, methods, recruitment (FR + Darija/AR), ethics for bereavement cases, timeline. Not started before Gate 1 |
 
-## Later phases (high level, all after Gate 1)
-- research: user research plan, then interviews/survey with travellers and existing customers, then synthesis → studio/research/; personas.md built from evidence only
-- strategy + ui-designer: information architecture and the travel insurance flow (quote → options → traveller details → payment → policy/certificate → claims/assistance) → studio/design/flows/
-- ui-designer: 2–3 UI directions on key screens (home, quote, checkout, policy, emergency/assistance) → studio/design/
-- human: GATE 2 sign-off on the chosen direction (BLOCKED — needs human sign-off)
-- critic: usability, accessibility (WCAG 2.1 AA, RTL if Arabic), consistency against the brief → studio/reviews/
-- ui-designer: fix the issues the critic raised, then write the handoff spec → studio/design/handoff/
-- human: GATE 3 final handoff sign-off (BLOCKED — needs human sign-off)
+## Later phases (after Gate 1)
+- research: interviews, concept tests, call-reason analysis → synthesis; personas.md rebuilt from evidence (currently still website header, no content)
+- strategy + ui-designer: flows updated from research → design/flows/
+- ui-designer: 2–3 UI directions on key screens (SOS, roadside, buy cover/certificate, wallet, assistant)
+- human: **GATE 2 chosen direction** — BLOCKED — needs human sign-off
+- critic: usability, WCAG 2.2 AA, RTL, consistency → reviews/
+- ui-designer: fixes + handoff spec → design/handoff/
+- human: **GATE 3 final handoff** — BLOCKED — needs human sign-off
 
 ## Blockers
-- Online subscription site voyage.africafirstassist.com unreachable from this session (proxy 403). Current online purchase steps and payment methods unknown. (www. site is now readable; desk review done.)
-- No kickoff held; brief.md is empty. Research cannot be planned in detail until Gate 1.
-- No deadline, budget or client contacts recorded.
+- **voyage.africafirstassist.com blocked** (proxy 403). Subscription engine, steps, payment provider and certificate format unknown. MVP item T1 depends on reusing it (roadmap §4.3 item 7).
+- **App stores blocked** from this session. Competitor claims (My Wafa, MyRMA, MyAXA, Sanlam Maroc) are desk snippets only → task 5.
+- **No client data**: segment sizes, case volumes, channel split, call reasons, contact rights. 1M+ funnel is all placeholders [__]; KPI targets wait for a 90-day baseline.
+- No pitch meeting date, deadline, budget, decision makers or client contacts recorded.
+- brief.md and personas.md are still the old website templates.
 
-## Open questions for the client (for the kickoff)
-Refreshed 2026-11-17 after the desk review (studio/research/2026-11-17-desk-review-current-site.md, Part D). "Site shows" = what the current site says; it does not answer what the NEW site should do.
+## Risks
+- Deck credibility: public figures conflict (visas, rank, installs). Keep "(to confirm)" labels; market rank stays internal.
+- Legal claims (09-08, CNDP, ACAPS) come from snippets; must stay "to confirm by legal counsel".
+- 1M+ depends on partner contact rights, not on direct retail. If AFA cannot contact beneficiaries, the target fails.
+- Scope creep: deck shows V2/V3 and WhatsApp; MVP must stay the §4.3 list, WhatsApp priced separately.
+- Deck could go to AFA before approval and before the critic recheck → task 6 gate.
 
-1. PARTLY. Online end to end, or lead capture + agent? Site shows both today: online subscription site (claims instant certificate, "Paiement sécurisé") plus agencies/brokers and phone. Which model for the new site?
-2. PARTLY. Insurer / regulation. Site shows AFA SA as an insurance company under law 17-99, SanlamAllianz subsidiary, data law 09-08, insurance mediator. Still need: licence/ACAPS reference, any separate risk carrier, mandatory disclosures, KYC.
-3. OPEN. Payment methods (card, mobile money, transfer) and payment provider. Site only says "Paiement sécurisé".
-4. PARTLY. Markets and currencies. Current retail offer is for Morocco residents, priced in MAD. Group is in 20 African countries (not listed). Which markets for the new site?
-5. PARTLY. Languages. Current site is French only (Arabic only in a financial footer block, no English). Which languages at launch; is Arabic RTL needed?
-6. PARTLY. Products. Current travel range: Isaaf Visa Europe (from 450 dhs), Monde (700), Monde Premium (990), Monde Santé (1390), Étudiants Expatriés (490). Still need: single trip vs annual, durations, what the from-price covers, which products are in scope.
-7. PARTLY. Visa certificate. Site claims an immediate, consulate-compliant certificate, printable PDF, several languages. Still need: exact format, languages, how consulates verify it.
-8. PARTLY. Users. Site serves individuals, companies/administrations, and sells via AFA offices, insurance agencies and brokers. Who is the new site for?
-9. PARTLY. Assistance scope. Site covers travel, medical, vehicle, home, death assistance; 24/7 line; claim and complaint forms. Scope of the new site? Online claims tracking wanted?
-10. OPEN. Analytics, conversion, drop-off, support/claims logs.
-11. PARTLY. Brand and stack. Current site is WordPress + Elementor (Roboto, colour tokens known); subscription site is a separate app. Brand guidelines? Future stack and who builds?
-12. OPEN. Deadline, budget, decision makers, gate sign-off contacts.
-13. OPEN. Can we recruit real customers/travellers for research?
+## Open questions for the client (one prioritised list)
+Merged from roadmap §9.2 and the 2026-11-17 list (desk review Part D). Website-only questions dropped unless still relevant to the app.
 
-New questions from the desk review:
-14. Can we get access to voyage.africafirstassist.com (allowlist or test account/screenshots)? Which products can be bought online today?
-15. What does the "À partir de" price cover (days, persons, zone)? How is price calculated?
-16. Channel split: online vs agencies vs brokers vs phone. Do agencies use the same subscription tool?
-17. Which is the real 24/7 emergency number and its hours? The contact page contradicts itself.
-18. Correct medical limit for world products: 50 000 € (category page) vs 350 000 dhs (Isaaf Monde page)?
-19. Are "zéro risque de refus" and "Acceptée par les centres de traitements des dossiers visa" approved by compliance?
-20. Does the new site replace www, the subscription subdomain, or both?
+**Ask first (decide 1M+, MVP and the engine)**
+1. Segment split and volumes: direct Isaaf policies per year, partner beneficiaries per partner, corporate staff; cases per year per line and channel; calls by reason; online vs agency vs broker vs phone split. Is analytics/conversion data available? (roadmap Q1; old Q8, Q10, Q16)
+2. Partner contracts: may AFA contact beneficiaries and offer an app? Who owns the data? (Q2)
+3. Which partners want an app, and AFA-branded, co-branded or SDK? Which partner pilots in MVP? Is Sanlam Maroc still a partner after the 2026 Allianz Maroc merger? (Q3)
+4. How does AFA define "1M+ clients"? Deadline, budget, decision makers, gate sign-off contacts. (Q11; old Q12)
+5. Case/dispatch system: is there an API? Does the provider portal/app share GPS? (Q4)
+6. Can the voyage. subscription engine be reused (API, pricing, certificate generation)? Can we get access or a test account? Which products sell online today? (Q5; old Q14, Q1)
+7. CNDP authorisations on file, current hosting, SanlamAllianz rules on cloud and AI vendors; licence/ACAPS reference, mandatory disclosures, KYC. Who is the legal/compliance owner? (Q7; old Q2)
+8. Which is the real 24/7 emergency number and its hours? (SOS calls it; contact page contradicts itself.) (old Q17)
+
+**Needed for the brief**
+9. Launch countries and languages: FR + AR (RTL) at launch? English needed? (Q8; old Q4, Q5)
+10. Payment provider and accepted methods (card, wallet, pay-at-agency). (Q6; old Q3)
+11. Products in the app: single trip vs annual, durations, what the "À partir de" price covers, how price is calculated. (old Q6, Q15)
+12. Correct medical limit for world products: 50 000 € or 350 000 dhs? (needed for wallet and cover assistant) (old Q18)
+13. Visa certificate: exact format, languages, how consulates verify it. (old Q7)
+14. Do call recordings and claim histories exist for AI training/evaluation, with consent? (Q12)
+15. Can we recruit real customers, partner beneficiaries and agents for research? (old Q13)
+16. Brand guidelines; who builds the app (in-house or tech partner); existing stack. (old Q11)
+
+**Later / optional**
+17. WhatsApp offered as optional add-on: does AFA want it; do partners accept it? (Q9)
+18. Teleconsultation: existing medical partners and licences; telemedicine rules AFA follows? (Q10)
+19. Are "zéro risque de refus" and "acceptée par les centres visa" approved by compliance (if reused in the app)? (old Q19)
+20. Does the website stay as is, or will the app's web status page / purchase flow replace parts of it? (old Q20, reframed)
