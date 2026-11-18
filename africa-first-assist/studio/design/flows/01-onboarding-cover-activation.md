@@ -4,7 +4,7 @@ Status: DRAFT pitch input. Assumptions marked (A). Open questions marked (Q).
 Roadmap features: **X1** account and onboarding, **X13** consent and privacy centre, **X9** FR/AR + RTL, **X10** accessibility, **X7** SMS [RM 2.1, MVP items 1, 10, 11].
 
 ## Goal
-A person gets from first launch to a linked, active cover in under 3 minutes (A, target to set after baseline), with SOS available at every second.
+A person gets from first launch to a linked, active cover in under 3 minutes (A, target to set after baseline), with SOS available at every second. The SOS bar sits at the bottom of every onboarding and login screen, including OTP, the lock-out screen and the app lock screen (flow 02, `rtl-conventions.md` R7).
 
 ## Entry points
 - First launch from the app store.
@@ -42,8 +42,10 @@ flowchart TD
     S7 -->|"Partner code"| S9["ONB-08b Enter partner code"]
     S7 -->|"I have no cover"| BUYF[["Flow 04 Buy travel cover"]]
     S7 -->|"Skip"| HOMEA["Home, no cover. SOS still works"]
-    S8 --> D3{"Policy found?"}
-    S9 --> D3
+    S8 --> L1["Checking your cover: E-LOAD, timeout then retry or human check"]
+    S9 --> L1
+    L1 --> D3{"Policy found?"}
+    L1 -->|"Timeout"| E5
     D3 -->|"Found"| D4{"Name and phone match?"}
     D3 -->|"Not found E-POL"| E5["Check format tips. Try other method"]
     E5 --> D5{"Third failure?"}
@@ -60,33 +62,34 @@ flowchart TD
     E9 --> S10
     S10 --> S11["ONB-10 Consent centre: location, notifications, partner data share, marketing"]
     S11 --> HOMEB(["Home with cover in Wallet"])
+    S6 -.->|"Next launches"| LOCKS["App lock screen: biometric or PIN. SOS bar works without unlock"]
 ```
 
 ## Step table
 | # | Screen | User action | System response | AI involvement / human-in-the-loop | Notes (accessibility, FR/AR RTL) |
 |---|---|---|---|---|---|
 | 1 | ONB-01 Language | Picks FR or AR | Sets UI language and direction. Saves on device | None | Language names in their own script ("Français", "العربية"). Changeable later in Profile. Default from device language (A) |
-| 2 | ONB-02 Welcome | Reads value proposition. Taps "Get started" or SOS | SOS and 24/7 number shown before any form | None | SOS reachable with screen reader as first or second focus item. No auto-playing carousel (2.2.2) |
+| 2 | ONB-02 Welcome | Reads value proposition. Taps "Get started", SOS, or "Ask a question" | SOS bar and 24/7 number shown before any form. "Ask a question" opens the assistant in public mode (flow 07) | AI1 public mode: general product questions only | SOS reachable with screen reader as first or second focus item. No auto-playing carousel (2.2.2) |
 | 3 | ONB-03 Phone number | Enters number. Country code preselected +212 | Validates format. Sends OTP by SMS | None | Number field LTR inside RTL. Input type tel. Explains why the number is needed |
 | 4 | ONB-04 OTP | Enters 6 digits or autofill | Verifies. Resend timer 30 s (A). Max 5 tries (A) | None | Autofill one-time-code (iOS/Android). No CAPTCHA (3.3.8). Timer readable and adjustable or long enough (2.2.1). Error text, not colour only |
 | 5 | E3 Resend / voice | Taps resend or "Call me with the code" | New code by SMS or voice call | None | Voice OTP in FR and AR (A). Abroad, SMS may fail on roaming: voice or email fallback **Q** |
-| 6 | ONB-05 Profile | Enters name, date of birth | Stores. Used for policy match | None | Minimum data only (09-08 minimisation). Names in Latin or Arabic script: both accepted; match logic **Q** |
-| 7 | ONB-06 Biometric | Opts in or not | Enables device biometrics | None | Never the only way in. PIN alternative |
+| 6 | ONB-05 Profile | Enters name, date of birth | Stores. Used for policy match | None | Minimum data only (data minimisation under law 09-08, to confirm by legal counsel). Names in Latin or Arabic script: both accepted; match logic **Q** |
+| 7 | ONB-06 Biometric | Opts in or not | Enables device biometrics and the app lock screen | None | Never the only way in. PIN alternative. The app lock screen keeps the SOS bar: SOS works without unlocking and shows no personal data (flow 02) |
 | 8 | ONB-07 Add a cover | Chooses method | Shows examples of where to find each number | None | Picture of a certificate with the number highlighted, plus text alternative |
-| 9 | ONB-08a/b Number or code | Types or scans | Calls policy lookup API | Optional on-device OCR of the number on a certificate or card (AI5 family, Should). User confirms the read value | Scan always has manual entry. Policy number LTR |
+| 9 | ONB-08a/b Number or code | Types or scans | Calls policy lookup API. E-LOAD: "Checking your cover", then retry or human check on timeout | Optional on-device OCR of the number (smart document check family, OCR + rules, Should). User confirms the read value | Scan always has manual entry. Policy number LTR. Loading status announced (4.1.3) |
 | 10 | Lookup result | — | Found / not found / mismatch / inactive / partner not in pilot | Back-office person checks mismatches and repeated failures (callback) | Never a dead end. Each error gives a next step and the 24/7 number |
-| 11 | ONB-09 Cover summary | Confirms "This is my cover" | Links cover to account. Pushes it to Wallet. Caches offline copy (X11) | None | Plain-language cover summary. Dates in local format. Hijri dates? **Q** |
+| 11 | ONB-09 Cover summary | Confirms "This is my cover" | Links cover to account. Pushes it to Wallet. Caches offline copy (X11) | None | Plain-language cover summary. Dates Gregorian, day-month-year (`rtl-conventions.md` R5) |
 | 12 | ONB-10 Consent centre | Sets toggles | Records each consent with time and version | None | Location asked here with reason, and again in context at SOS if denied. Marketing off by default. Partner data share explained per partner (X13) |
 | 13 | Home | — | Shows cover status and quick actions | None | Welcome message announced once to screen readers |
 
 ## Edge states covered
-E-NET (step 3), E-OTP (steps 4–5), E-POL (step 10), E-COV expired / partner not in pilot (step 10), E-HRS callback (step 10). E-GPS and E-PAY: not in this flow (see 02 and 04).
+E-NET (step 3), E-OTP (steps 4–5), E-LOAD (policy lookup, step 9), E-POL (step 10), E-COV expired / partner not in pilot (step 10), E-HRS callback (step 10; activation is non-urgent, SOS and 24/7 stay visible). E-GPS and E-PAY: not in this flow (see 02 and 04).
 
 ## Success criteria
 - Share of new accounts that link a cover within 7 days (Activation metric [RM 6]). Target: set with client after baseline.
 - Median time from launch to linked cover. Target after baseline.
 - OTP success on first code. Policy lookup success on first try.
-- Zero onboarding screens without visible SOS.
+- Zero onboarding, login or lock screens without the SOS bar.
 - No WCAG 2.2 AA defects on the flow at release.
 
 ## Open questions
@@ -96,3 +99,11 @@ E-NET (step 3), E-OTP (steps 4–5), E-POL (step 10), E-COV expired / partner no
 - Q4. Foreign phone numbers and OTP abroad: supported?
 - Q5. Can one person hold covers from AFA direct and from a partner in one account? (A: yes.)
 - Q6. Who handles callback checks, and what are the hours? [DR N4]
+
+## Changelog 2026-11-18 (critic fixes)
+- Finding 2 / 12: SOS bar on every onboarding, login, OTP, lock-out and app lock screen; app lock screen drawn.
+- Finding 12: E-LOAD state for the policy lookup, with timeout exit.
+- Finding 11: welcome screen offers the assistant in public mode (general product questions).
+- Finding 14: dates follow `rtl-conventions.md` R5 (Hijri question closed provisionally).
+- Finding 7: data-minimisation statement marked "to confirm by legal counsel".
+- Finding 4: OCR of the number labelled smart document check (OCR + rules), not AI.
