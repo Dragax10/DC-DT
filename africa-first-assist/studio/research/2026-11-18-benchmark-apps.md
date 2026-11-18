@@ -103,7 +103,7 @@ One matrix per group so it stays readable. Rows = features, columns = app IDs fr
 | Feature | N1 My Wafa | N2 Wafa Santé | N3 Sérélia | N4 MyRMA | N5 MyAXA MA | N6 Sanlam MA | N7 AtlantaSanad | N8 MCMA M3ak | N10 MaCNSS |
 |---|---|---|---|---|---|---|---|---|---|
 | Digital policy / contract view | ✓ |  |  | ✓ | (✓) | ✓ | ✓ |  |  |
-| Buy / renew / pay in app | ✓ |  | ✓ (platform) | ✓ |  |  |  | (✓) |  |
+| Buy / renew / pay in app | ✓ |  | ✓ (platform) | ✓ |  |  |  |  |  |
 | Quote / price simulation | ✓ |  |  | (✓) |  |  | ✓ (chatbot) |  |  |
 | Travel quote and visa certificate |  |  |  |  |  |  |  |  |  |
 | SOS / emergency call with geolocation |  |  | ✓ (watch alert; geolocation not stated) |  |  |  |  |  |  |
@@ -170,7 +170,7 @@ One matrix per group so it stays readable. Rows = features, columns = app IDs fr
 | Symptom checker / AI doctor |  | ✓ AI |  |  |  |  |  |  |  |  |  | ✓ AI |  | ✓ AI |  |  |  |  |
 | Provider / hospital map | ✓ |  |  | ✓ |  |  |  |  |  |  |  | ✓ |  | ✓ |  |  |  |  |
 | E-prescription |  |  | ✓ |  |  |  |  |  |  |  |  |  |  | ✓ (refills via AI) |  |  |  |  |
-| Chat / chatbot | ✓ (contact) | ✓ AI |  |  |  |  |  | ✓ |  |  | ✓ AI |  ✓ AI |  | ✓ AI | ✓ |  | ✓ (WhatsApp) | ✓ |
+| Chat / chatbot |  | ✓ AI |  |  |  |  |  | ✓ |  |  | ✓ AI |  ✓ AI |  | ✓ AI | ✓ |  | ✓ (WhatsApp) | ✓ |
 | Travel / safety alerts | ✓ | ✓ |  |  |  |  |  | ✓ | ✓ | ✓ |  |  |  |  |  |  |  |  |
 | Flight alerts / auto payouts | ✓ | ✓ |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 | Translation | ✓ (medical terms) |  | ✓ (multilingual doctors) | ✓ |  |  | ✓ (symptoms) |  | ✓ (service) |  |  |  |  |  |  |  |  |  |
