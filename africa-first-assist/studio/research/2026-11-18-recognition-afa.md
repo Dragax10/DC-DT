@@ -15,15 +15,15 @@ Reuses: `studio/research/2026-11-17-desk-review-current-site.md` (website, produ
 
 ## Executive summary (desk research)
 1. **AFA is a B2B2C assistance company first.** It is the "assisteur" behind other brands' contracts (e.g. Sanlam Maroc motor policies, La Marocaine Vie health). Its direct retail offer is narrow: mainly travel/visa cover. Most of the "8 million beneficiaries" it claims are probably end-users of partner contracts who may not know the AFA brand. [S9, S20, S22, S23]
-2. **Ownership: SanlamAllianz group.** Sanlam Maroc held 25% of AFA SA (2021). In Morocco, Allianz Maroc merged into Sanlam Maroc in July 2026 (now "SanlamAllianz Maroc"). That may bring a larger insurer client base into AFA's reach. Not confirmed. [S16, S30, S31]
-3. **Lost market position.** Saham Assistance (AFA's former name) was No.1 in Moroccan assistance in 2016 with a 38.8% share. In 2024, premium rankings put AFA about **3rd**, behind Maroc Assistance Internationale (MAI) and Wafa IMA. RMA moved its assistance in-house (it used to buy it from Saham). Exact figures conflict between tables. [S33, S34, S35, S36]
+2. **Ownership: SanlamAllianz group.** Sanlam Maroc held 25% of AFA SA (2021 report; current stake to confirm). In Morocco, Allianz Maroc merged into Sanlam Maroc in July 2026 (now "SanlamAllianz Maroc"). That may bring a larger insurer client base into AFA's reach. Not confirmed. [S16, S30, S31]
+3. **The market is moving (INTERNAL detail, not for the deck).** Insurers already run apps with assistance features, and Wafa IMA Assistance launched a digital senior-assistance service (Sérélia, Feb 2026) [S58, S59]. *Internal only:* public premium tables (search snippets) suggest AFA's relative rank has changed since 2016 (Saham Assistance 38.8% share in 2016 [S33]; 2024 tables list MAI and Wafa IMA with higher premiums [S34, S35]), and RMA moved its assistance in-house [S36]. **The tables conflict and were not verified.** Do not state a market rank or decline to the client; ask for AFA's own view [D4 Q8].
 4. **AFA has no mobile app.** No app is found in search, and AFA's site links to no app store. The site links to Facebook, Instagram, YouTube and an old "saham-assistance" LinkedIn page. [S1 HTML, S40, S41]
-5. **Competitors in apps:** none of the specialist assisteurs (MAI, Wafa IMA, Cover Edge ex-AXA Assistance, RMA Assistance) has a dedicated app we could find. **Insurer apps** already offer assistance features: My Wafa (about 1M installs, geolocated breakdown help), MyAXA, RMA Watanya, Sanlam Maroc app. An AFA app would compete with its own clients' apps. [S50–S55]
+5. **Competitors in apps:** none of the specialist assisteurs (MAI, Wafa IMA, Cover Edge ex-AXA Assistance, RMA Assistance) has a dedicated app we could find. **Insurer apps** already offer assistance features: My Wafa (~1M installs per a third-party tracker, unverified; geolocated breakdown help per App Store snippet), MyAXA (roadside-assistance contact; E-Health teleconsultation platform), RMA Watanya / MyRMA (geolocated assistance in the legacy app per launch press; Allô Santé telehealth per press), Sanlam Maroc app. An AFA app could compete with its own clients' apps. [S50–S55; BM N1, N4, N5] **Differentiator, restated:** we found no Moroccan app that combines one-tap SOS that opens an assistance case, live case status across assistance lines, and travel cover with an instant visa certificate, and no Darija support (desk search, not verified in stores; see [BM 1b]).
 6. **Market:** Moroccan insurance premiums are about 60–64 bn MAD a year, growing 5–7%. The assistance line alone is small: about 1.1 bn MAD in H1 2025 (+6.6%), +7.8% by end Sept 2025. [S60–S63]
 7. **Strong mobile base:** 30.7 M smartphone holders reported; 93.6% urban and 78.4% rural households have a smartphone (ANRT 2025). Mobile payment is still low: about 10% adoption (BAM governor, 2024), 13.7 M m-wallets at end 2024, largely from social-aid payments. Cash still dominates. [S70–S74]
-8. **Travel demand is real and seasonal.** Moroccans received about 606 000 Schengen visas in 2024 (4th largest applicant nationality). About 4.06 M MRE (diaspora) entered Morocco in summer 2025 (Opération Marhaba). Each visa needs travel insurance: this is AFA's core retail product. [S80–S83]
+8. **Travel demand is real and seasonal.** Schengen visas granted to Moroccans in 2024: figures found range from about **437 000** (Turespaña/EC data) to about **606 000** (Ministry of Foreign Affairs, via Morocco World News) [S80–S82, snippets]; a third figure, 480 354, is for another year or source [S82]. To confirm with the official EC figure. Moroccans were the 4th largest applicant nationality [S81]. About 4.06 M MRE (diaspora) entered Morocco in summer 2025 (Opération Marhaba). Each visa needs travel insurance: this is AFA's core retail product. [S80–S83]
 9. **Languages:** 91.9% use Darija daily; 24.8% use Amazigh; 57.7% of literate people read French, 20.5% English (RGPH 2024). AFA's site is French only. An app for 1M+ users needs Arabic (RTL) and spoken Darija for voice/chat. [S90, DR]
-10. **Main risks:** health data under law 09-08 (CNDP authorisation, no transfer abroad without approval), ACAPS rules on online sales, unclear ownership of the end-customer with partners, and a brand most beneficiaries may not recognise. [S100–S104]
+10. **Main risks:** health data under law 09-08 (reported: CNDP authorisation, limits on transfer abroad without approval; **to confirm by legal counsel**), ACAPS rules on online sales (**to confirm by legal counsel**), unclear ownership of the end-customer with partners, and a brand most beneficiaries may not recognise. [S100–S104]
 
 ---
 
@@ -134,7 +134,7 @@ At the 2021 rename, the CEO (then Driss Chafik) described a new logo, new signag
 
 ### A2. Ownership and group
 - AFA presents itself as "Filiale du Groupe SANLAMALLIANZ" [S9].
-- Sanlam Maroc report: AFA is the "historic and exclusive partner" of Sanlam Maroc for assistance; Sanlam Maroc holds **25%** of Africa First Assist S.A. (2021) [S16 snippet]. Holders of the other 75%: **not found**.
+- Sanlam Maroc report (**2021**): AFA is the "historic and exclusive partner" of Sanlam Maroc for assistance; Sanlam Maroc holds **25%** of Africa First Assist S.A. [S16 snippet]. Whether this is still true after the 2026 Allianz Maroc merger: **to confirm**. Holders of the other 75%: **not found**.
 - ACAPS 2023 report: authorisation of an indirect change of control for Allianz Maroc, Sanlam Maroc and Africa First Assist (linked to the SanlamAllianz JV) [S19 snippet].
 - SanlamAllianz describes AFA as its subsidiary, "the leading automobile assistance company in Africa with a presence in 18 countries", with 460 000 providers and a partnership with Mondial Assistance group (undated page) [S18 snippet].
 - Morocco, 2026: Allianz Maroc absorbed by Sanlam Maroc, approved at EGMs on 2 July 2026, retroactive to 1 Jan 2026 [S30 snippet]. Press: combined entity about 4th Moroccan insurer, about 14% share, over 8 bn MAD premiums in 2025 [S32 snippet]. Name "SanlamAllianz Maroc" reported by one secondary source [S31 snippet] — verify.
@@ -151,7 +151,7 @@ At the 2021 rename, the CEO (then Driss Chafik) described a new logo, new signag
 |---|---|---|---|
 | Beneficiaries | "plus de 8 millions de bénéficiaires" | S9 | company claim; no date or definition. 6 M quoted at an earlier date [S10 snippet] |
 | Countries | 20 [S1, S9, S17]; 21 [S10, 2021]; 18 [S18] | — | **inconsistent**. List of countries: **not found** |
-| Employees | "+300 collaborateurs de 17 nationalités" | S9 | |
+| Employees | "+300 collaborateurs de 17 nationalités" | S9 | **Total staff, all roles.** Not the number of call-centre agents (not found; ask the client) |
 | Providers | 1 340 in Morocco [S9]; 1 460 "au Maroc et en Afrique subsaharienne" [S1]; 460 000 worldwide [S1, S9, S18] | — | inconsistent (see [DR] O-C3) |
 | Platform languages | 19 [S1] vs "plus de 60 langues et dialectes" [DR S9] | — | inconsistent |
 | Cases handled per year | **not found** | — | ask the client |
@@ -183,7 +183,7 @@ From AFA's site [DR A2, S9b, S9c] and partner sources:
 
 ### A7. Distribution partners and B2B clients (public)
 **Confirmed by a third-party source:**
-- Sanlam Maroc — exclusive assistance partner; assisteur in motor contracts [S16, S20, S21].
+- Sanlam Maroc — historic assistance partner, described as "exclusive" in a 2021 report (to confirm today); assisteur in motor contracts [S16, S20, S21].
 - La Marocaine Vie — partnership May 2022, assistance in the "Sehha" health offer [S22, S23].
 
 **Shown only as logos on AFA's "Références" wall** [S9] (relationship not stated; logos uploaded in 2021, so may be out of date). Categories on the page: Administrations et institutions publiques, Compagnies d'assurances, Institutions de Microfinance, Banques, Concessionnaires automobiles et locations. Logo file names include: Allianz, RMA, Saham Assurances, Compagnie d'assurance transport; BMCI, CIH Bank, Crédit Agricole, Société Générale; Al Amana Microfinance, Cofina Burkina Faso; Renault, Dacia, Ford, Opel, Avis, Budget, ALD Automotive, Arval BNP; CNSS, Poste Maroc, ONEP, ONP, Al Omrane; Fondation Hassan II, Fondation Mohammed V, Fondation Mohammed VI; Microsoft, HPS, 2M, Atlas Voyages, Al Akhawayn University, SGS, Société Marocaine des Tabacs, Société des Brasseries du Maroc.
@@ -205,12 +205,12 @@ From AFA's site [DR A2, S9b, S9c] and partner sources:
 | Bancassurance | 20.5 bn MAD in 2024, +6.6% | S65 |
 | Penetration | 2.1% of GDP (2023) | S69 |
 | Regulator | ACAPS (Autorité de Contrôle des Assurances et de la Prévoyance Sociale) | S38, S61 |
-| Online sales rules | ACAPS 2022 instruction on electronic sales: no prior approval, but ACAPS must be informed before launch; Oct 2025: ACAPS building automated monitoring of online offers, misleading ads, non-transparent subscription | S66, S67 |
+| Online sales rules | Reported (snippets): ACAPS 2022 instruction on electronic sales: no prior approval, but ACAPS must be informed before launch; Oct 2025: ACAPS building automated monitoring of online offers, misleading ads, non-transparent subscription. **To confirm by legal counsel** | S66, S67 |
 | InsurTech | ACAPS "Émergence" programme, 1st edition closed 16 Oct 2025; use cases include online subscription journeys and embedded insurance | S68 |
 | Smartphones | ANRT 2025 survey: 93.6% urban / 78.4% rural households own a smartphone; about 30.7 M smartphone holders, 31.5 M internet users | S70 |
 | Mobile subscriptions | 59.16 M at end Dec 2025 (160.65% penetration) | S71 |
 | Mobile payment | 13.7 M m-wallets end 2024 (10.4 M end 2023); 19.7 M transactions, 3.9 bn MAD; growth driven by social-aid payouts; adoption "environ 10%" (BAM governor, May 2024); cash dominant | S72, S73, S74 |
-| Schengen visas | about 606 000 granted in 2024, refusal about 20% (Minister of Foreign Affairs); other source 437 029 (Turespaña/EC data). Moroccans 4th largest applicant nationality in 2024; 591 404 applications in 2023 | S80, S81, S82 |
+| Schengen visas | **Range, sources conflict:** about 606 000 granted in 2024, refusal about 20% (Minister of Foreign Affairs) [S80]; 437 029 (Turespaña/EC data, seen in search summaries for S80–S82); 480 354 granted (other year/source) [S82]. Moroccans 4th largest applicant nationality in 2024; 591 404 applications in 2023 [S81]. Use the official EC figure on any slide | S80, S81, S82 |
 | Diaspora (MRE) | Marhaba 2025: over 4.06 M MRE welcomed (10 Jun–15 Sep), +11% vs 2024; 54% by port, 46% by air | S83 |
 | Outbound travel | Destinations 2024: Spain 25%, France 25%, Saudi Arabia 11%, Turkey 10%, Italy 5%; total departures: **not found** (one professional's estimate of about 1 M holidaymakers is not official) | S84 |
 | Travel spend abroad | 29.4 bn MAD in 2024, +9.6% (reported) | S85 (via search summary) |
@@ -227,9 +227,9 @@ App benchmark is done by another agent; this is existence only.
 | Player | Owner | Dedicated assistance app found? | Related app | Source |
 |---|---|---|---|---|
 | Maroc Assistance Internationale (MAI) | Groupe Banque Populaire (since 1988); created 1976 | No | — | S59c |
-| Wafa IMA Assistance | Attijariwafa bank / Wafa Assurance / IMA | No | My Wafa (Wafa Assurance): auto, health, savings; geolocated breakdown help; about 998K installs, 4.0★ (third-party tracker); Wafa Santé; "Sérélia" senior telecare service (not confirmed as app). "Élu Service Client" 2024 and 2025 | S50, S51, S58, S59, S59d |
-| Cover Edge (ex-AXA Assistance Maroc) | ASK Capital (majority since 2022); renamed Jan 2025 | No | MyAXA (AXA Assurance Maroc, 2018): contact assistance, find garages, e-health | S59b, S52 |
-| RMA Assistance | RMA (64%) + Groupama/Mutuaide | No | RMA Watanya app: contracts, geolocated assistance, claim pre-declaration with photo | S36, S53 |
+| Wafa IMA Assistance | Attijariwafa bank / Wafa Assurance / IMA | No | My Wafa (Wafa Assurance): auto, health, savings; geolocated breakdown help (App Store snippet, not verified; not found in the benchmark's sources [BM N1]); ~1M installs (about 998K), 4.0★ per a third-party tracker, unverified; Wafa Santé; "Sérélia" senior telecare service (not confirmed as app). "Élu Service Client" 2024 and 2025 | S50, S51, S58, S59, S59d |
+| Cover Edge (ex-AXA Assistance Maroc) | ASK Capital (majority since 2022); renamed Jan 2025 | No | MyAXA (AXA Assurance Maroc, 2018): contact assistance, find garages; E-Health teleconsultation platform (2021) [BM N5] | S59b, S52 |
+| RMA Assistance | RMA (64%) + Groupama/Mutuaide | No | RMA Watanya app (legacy, launch press): contracts, geolocated assistance, claim pre-declaration with photo. Current MyRMA: Allô Santé telehealth reported by press [BM N4] | S36, S53 |
 | SanlamAllianz Maroc (AFA's group/client) | SanlamAllianz | — | Sanlam Maroc app: contracts, claims tracking, fingerprint login, Inaya health service | S54, S55 |
 | Mondial Assistance / Allianz Partners Maroc | Allianz | Not found as a separate Moroccan entity | — | — |
 | **Africa First Assist** | SanlamAllianz | **No** (no store result; no store link on site) | — | S1, S40, S41 |
@@ -250,11 +250,11 @@ Not user evidence. Confidence reflects the strength of desk sources only.
 |---|---|---|---|
 | O1 | AFA is mainly a B2B2C operator. Its revenue and "8 M beneficiaries" come mostly through insurers, banks, carmakers and institutions. Direct retail is limited to travel/visa and a few auto/home products. | A6, A7, S9 | Medium (no channel split public) |
 | O2 | Most beneficiaries probably meet AFA only when they call for help, under another brand's name (e.g. "Sanlam assistance"). Brand awareness of "Africa First Assist" is likely low; the "Isaaf" product name may be better known. | A2, A7, rename in 2021 | Low (needs research) |
-| O3 | AFA has lost ground in Morocco: from No.1 (38.8%, 2016) to about No.3 (2024), and RMA in-sourced. Growth of the assistance line (+6–8%) is happening, but AFA's own premiums are roughly flat (−1.3% to +4.3%). | A8, S33–S37 | Medium (figures from secondary tables) |
-| O4 | AFA's partners already own customer-facing apps (Sanlam Maroc app, and competitors' insurer apps with geolocated assistance). An AFA consumer app could overlap with, or compete against, its clients' apps. | A10 | High (apps exist) / Medium (overlap) |
-| O5 | The assistance specialists (MAI, Wafa IMA, Cover Edge, RMA Assistance) have no dedicated consumer app. An AFA app would be a first among specialists in Morocco, if positioned on the moment of need (SOS, tracking the tow truck, travel emergency). | A10 | Medium (search-based) |
+| O3 | **INTERNAL, not for the deck.** Public tables suggest AFA's relative position in Moroccan assistance has changed since 2016 (38.8% share then; other players listed with higher premiums in 2024), and RMA in-sourced. The assistance line grows (+6–8%); AFA's own premiums look roughly flat (−1.3% to +4.3%). Sources conflict and are snippets. For the client, use neutral wording: "the market is moving: insurers and Wafa IMA are going digital." | A8, S33–S37 | Low–Medium (conflicting secondary tables) |
+| O4 | AFA's partners already own customer-facing apps (Sanlam Maroc app, and other insurer apps with an assistance contact, geolocated assistance (reported) or teleconsultation access). An AFA consumer app could overlap with, or compete against, its clients' apps. | A10 | High (apps exist) / Medium (overlap) |
+| O5 | The assistance specialists (MAI, Wafa IMA, Cover Edge, RMA Assistance) have no dedicated consumer app. An AFA app would be a first among specialists in Morocco, if positioned on the moment of need: one-tap SOS that opens a case, live case status across assistance lines, travel cover with visa certificate, Darija support. Insurer apps already cover some assistance (contact, geolocated help, telehealth), so the claim is the **combination**, not any single feature [BM 1b]. | A10 | Medium (search-based) |
 | O6 | AFA already has building blocks for real-time assistance: automatic dispatch, geolocated assistance and a provider portal [S9c]. An app could plug into these. Maturity unknown. | S9c | Low (marketing copy) |
-| O7 | Travel/visa is the clearest direct-to-consumer use case: large, seasonal volume (about 0.6 M Schengen visas/year, 4 M MRE summer arrivals), a digital document (certificate) and a need for help abroad. | A8 | Medium |
+| O7 | Travel/visa is the clearest direct-to-consumer use case: large, seasonal volume (about 0.44–0.61 M Schengen visas in 2024 depending on source, 4 M MRE summer arrivals), a digital document (certificate) and a need for help abroad. | A8 | Medium |
 | O8 | Company facts on the site conflict (countries 18/20/21; providers 1 340/1 460; languages 19/60+; rename year in our own previous doc). A pitch must use client-confirmed numbers. | A4 | High |
 | O9 | Group context is moving: SanlamAllianz Maroc merger (2026), Allianz Partners x SanlamAllianz health partnership (2025), sister apps in Cameroon and Madagascar. There may be group IT, brand or app standards that constrain or speed up an AFA app. | A2, A9 | Medium |
 
@@ -295,8 +295,8 @@ Not user evidence. Confidence reflects the strength of desk sources only.
 |---|---|---|
 | Channel conflict with partners | Partners have their own apps and own the customer | A10, C1 |
 | Low brand awareness | Rename in 2021; services delivered under partner brands | O2 |
-| Health data | Law 09-08; CNDP authorisation for patient follow-up processing; no transfer abroad without CNDP approval (relevant to cloud hosting and AI providers); CNDP stated in Mar 2025 that AI processing of personal data falls under 09-08 | S100, S101, S102 (snippets) |
-| Online sales compliance | ACAPS must be informed before an online sales system goes live; ACAPS monitoring misleading online offers (cf. "zéro risque de refus" claim [DR O-U12]) | S66, S67 |
+| Health data | **To confirm by legal counsel** (snippets only): law 09-08; CNDP authorisation for patient follow-up processing; limits on transfer abroad without CNDP approval (relevant to cloud hosting and AI providers); CNDP reported in Mar 2025 that AI processing of personal data falls under 09-08 | S100, S101, S102 (snippets) |
+| Online sales compliance | **To confirm by legal counsel:** ACAPS reported to require being informed before an online sales system goes live; ACAPS monitoring misleading online offers (cf. "zéro risque de refus" claim [DR O-U12]) | S66, S67 |
 | Languages | Darija dominant in speech; Arabic needs RTL; French read by 57.7% of literate people; English 20.5%; Amazigh 24.8% spoken. Current site is French only | S90, S91, DR A5 |
 | Payment | Low m-wallet use; cash dominant | S72–S74 |
 | Multi-country | 18–21 countries, different regulators (e.g. CIMA zone) and currencies; scope for v1 unknown | A4 |
@@ -319,3 +319,11 @@ Not user evidence. Confidence reflects the strength of desk sources only.
 2. Allow network access (or screenshots) for voyage.africafirstassist.com, app stores, ACAPS and FMSAR statistics, and AFA social pages, to verify the snippet-based facts above.
 3. After Gate 1: 2–3 partner interviews (insurer, bank, carmaker) on app vs white-label.
 4. After Gate 1: interviews with recent assistance users (roadside, travel abroad, medical) — split by direct buyers and partner beneficiaries; recruit in Darija/Arabic and French.
+
+---
+
+## Changelog 2026-11-18 (critic fixes)
+Source: `studio/reviews/2026-11-18-pitch-package.md`.
+- **#1** Exec summary 5, A10, O4, O5: insurer-app assistance features stated precisely (My Wafa geolocated breakdown help and RMA Watanya geolocated assistance, snippet-level; MyAXA E-Health and MyRMA Allô Santé teleconsultation). Differentiator restated as a combination claim; canonical evidence in [BM 1b].
+- **#6** Exec summary 3 and O3: "lost market position" replaced by neutral wording; rank detail kept as INTERNAL with conflicting-source caveat. Sanlam "exclusive" dated 2021 and marked to confirm (A2, A7). "+300" marked as total staff (A4). Schengen visas given as a range with sources (exec summary 8, A8, O7). My Wafa installs "~1M per third-party tracker, unverified".
+- **#7** Legal points (09-08, CNDP, ACAPS) labelled "to confirm by legal counsel" (exec summary 10, A8, D3).
