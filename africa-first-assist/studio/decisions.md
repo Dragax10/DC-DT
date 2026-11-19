@@ -14,3 +14,9 @@
 | 2026-11-19 | **Two high-fidelity "visual teaser" screens allowed for the pitch** (Home, Help on the way) plus one hero shot, in AFA brand colours, built with the stageshow craft and framing rules. Labelled "one possible direction, for discussion"; this is not Gate 2 (AFA still chooses a direction after research). | Studio lead | Pitch needs a "wow" moment | Chat, 2026-11-19 |
 | 2026-11-19 | **AFA's primary brand colour is blue** (#006FB1, with navy #1F4E80 / #305D90). Red (#981222) was wrongly used as primary; corrected in the hi-fi screens and the pitch deck. Red kept only for the SOS button (emergency convention, colour from AFA's palette). | Studio lead | Brand correction from the studio lead | Chat, 2026-11-19 |
 | 2026-11-19 | **Visual direction paused; focus on UX deliverables and the pitch.** Pitch to be redesigned in French on a template/skill the studio lead will provide. UX deliverables to be packaged, stored in Resurf (via Claude Code on the studio lead's Mac) and sent by email by the studio lead before the stakeholder meeting (studio drafts, never sends). | Studio lead | Visual ideas need refining first; stakeholders meeting comes first | Chat, 2026-11-19 |
+
+## 2026-11-19 · App design in Claude (Design canvas), internal exploration
+- **Decision:** start designing the app screens on a Claude Design canvas (Artifact "Design" type), from this session's brief, personas, flows and wireframes.
+- **Who:** studio lead.
+- **Why:** keep all project context in one place; standalone Claude Design closes on 14 Dec 2026.
+- **Scope:** internal exploration only. Not shared with AFA. Does not pass gate 1 (brief signed) or gate 2 (direction chosen); anything shown to AFA later needs the studio lead's OK.
