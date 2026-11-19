@@ -1,0 +1,32 @@
+flowchart TD
+    start(["Am I covered? Wallet tab"])
+    online{"Online?"}
+    start --> online
+    online -->|"No"| offline["Banner: Offline. Last updated date and time. Your cards still work"]
+    online -->|"Yes"| any
+    offline --> any{"Any cover?"}
+    any -->|"No"| empty["Empty state: Add a cover, or Buy travel cover"]
+    any -->|"Yes"| list["Screen: My covers. Active first, ended ones greyed with end date"]
+    list --> card["Screen: Cover card. Who is covered, valid until, 24/7 number. Buttons: Get help, Ask about my cover, Documents, Add to phone wallet"]
+    card --> limits["Screen: What is covered. Limits in plain words"]
+    card --> docs["Screen: Documents. Certificate, conditions"]
+    card --> ask(["Ask about my cover: AI assistant U07"])
+    card --> help(["Get help: SOS U02, Roadside U03, Claim U05"])
+    card --> companion["Screen: Travel companion"]
+    companion --> country{"Country known?"}
+    country -->|"Location off"| pick["Screen: Choose the country from a list"]
+    country -->|"Yes"| page
+    pick --> page["Screen: Country page. AFA number from abroad, local emergency numbers, what to do step by step. Tap to call. Works offline"]
+    page --> inzone{"Inside the cover area?"}
+    inzone -->|"No"| warn["Message: Your cover may not apply here. Call us to check"]
+    inzone -->|"Yes"| ready(["Ready before anything happens"])
+    warn --> ready
+
+    classDef choice fill:#FFECBD,stroke:#FFC943
+    classDef msg fill:#FFCDC2,stroke:#FF7556
+    classDef ai fill:#DCCCFF,stroke:#874FFF
+    classDef ok fill:#CDF4D3,stroke:#66D575
+    class online,any,country,inzone choice
+    class offline,empty,warn msg
+    class ask ai
+    class start,ready ok

@@ -1,0 +1,41 @@
+flowchart TD
+    a(["Ask a question, not signed in: general questions about products"])
+    b(["Ask about my cover, signed in"])
+    intro["Screen: Before you start. This is an AI assistant. It answers questions about cover only and can make mistakes. Talk to a person, always visible"]
+    a --> intro
+    b --> intro
+    intro --> net{"Online?"}
+    net -->|"No"| offline["Message: The assistant needs a connection. Your cover summary and emergency numbers still work"]
+    net -->|"Yes"| type["Screen: Conversation. User types a question in French or Arabic"]
+    type --> topic{"What is the question about?"}
+    topic -->|"Sounds urgent"| urgent["Message: This sounds urgent. Call button"]
+    urgent --> sos(["SOS flow U02"])
+    topic -->|"Medical"| medical["Message: I cannot give medical advice. Call us, a person will help"]
+    topic -->|"A death"| grief(["Connects to a person. No assistant"])
+    topic -->|"A claim decision or amount"| claim["Message: A claims handler decides. See your claim status"]
+    topic -->|"My own cover, not signed in"| login["Message: Sign in to ask about your own cover, or talk to a person"]
+    topic -->|"Something else"| scope["Message: I can help with questions about cover. Here is what I can do"]
+    topic -->|"Cover question"| answer["Screen: Answer in plain words. Where it comes from: your contract, section. Information, not a decision. Helpful? Talk to a person"]
+    answer --> sure{"Answer found?"}
+    sure -->|"Not sure"| unsure["Message: I am not sure. Let us get you to a person"]
+    unsure --> human
+    sure -->|"Yes"| next{"Next step"}
+    next -->|"Another question"| type
+    next -->|"Not helpful"| human
+    next -->|"Done"| doneok(["Done"])
+    medical --> human
+    human["Screen: Talk to a person. Share this conversation with the agent? Yes, No"]
+    human --> where{"Abroad, on a trip, or outside office hours?"}
+    where -->|"Yes"| now(["Call the 24/7 line now, one tap"])
+    where -->|"No"| choose(["Call now, or ask for a callback at a time shown"])
+
+    classDef choice fill:#FFECBD,stroke:#FFC943
+    classDef msg fill:#FFCDC2,stroke:#FF7556
+    classDef person fill:#C2E5FF,stroke:#3DADFF
+    classDef ai fill:#DCCCFF,stroke:#874FFF
+    classDef ok fill:#CDF4D3,stroke:#66D575
+    class net,topic,sure,next,where choice
+    class offline,urgent,medical,claim,login,scope,unsure msg
+    class human,grief,now,choose person
+    class intro,type,answer ai
+    class doneok ok

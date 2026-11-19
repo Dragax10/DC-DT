@@ -1,0 +1,72 @@
+flowchart TD
+    open(["Opens the app"])
+    open --> first{"First time?"}
+    first -->|"Yes"| welcome
+    first -->|"No"| lock["Screen: Unlock with fingerprint, face or PIN. SOS works without unlocking"]
+    lock --> home
+
+    subgraph guest ["Without an account"]
+        welcome["Welcome"]
+        sosg["SOS: call AFA 24/7"]
+        numbers["Emergency numbers, offline"]
+        quote["Travel cover prices"]
+        askg["Ask a general question"]
+        signin["Sign in with your phone number"]
+    end
+    welcome --> sosg
+    welcome --> numbers
+    welcome --> quote
+    welcome --> askg
+    welcome --> signin
+    quote -->|"To buy"| signin
+    signin --> addcover["Add your cover"]
+    addcover --> home
+
+    subgraph tabs ["Signed in: 5 tabs, SOS bar on every screen"]
+        home["Home: my cover, my current request, quick actions"]
+        help["Help"]
+        wallet["Wallet"]
+        travel["Travel"]
+        profile["Profile"]
+    end
+
+    help --> roadside["Roadside help"]
+    help --> requests["My requests and their status"]
+    help --> claim["Make a travel claim"]
+    help --> died["A relative has died: talk to a person"]
+    wallet --> card["Cover card, what is covered, documents"]
+    card --> askme["Ask about my cover"]
+    travel --> buy["Buy travel cover and get the certificate"]
+    travel --> companion["Travel companion, offline"]
+    profile --> settings["Language, text size, SOS confirmation, notifications"]
+    profile --> privacy["My privacy choices"]
+    profile --> vehicles["My vehicles"]
+
+    subgraph next ["Later versions, V2"]
+        track["Live map of help on the way"]
+        homehelp["Home emergency help"]
+        doctor["Medical help and video consultation"]
+        family["Family members"]
+        chat["Chat with a person"]
+        voice["Tell us by voice or photo"]
+    end
+    requests -.-> track
+    help -.-> homehelp
+    help -.-> doctor
+    profile -.-> family
+    askme -.-> chat
+    help -.-> voice
+
+    classDef choice fill:#FFECBD,stroke:#FFC943
+    classDef sos fill:#FFCDC2,stroke:#FF7556
+    classDef person fill:#C2E5FF,stroke:#3DADFF
+    classDef ai fill:#DCCCFF,stroke:#874FFF
+    classDef later fill:#D9D9D9,stroke:#B3B3B3
+    class first choice
+    class sosg sos
+    class died person
+    class askg,askme ai
+    class track,homehelp,doctor,family,chat,voice later
+    style guest fill:#CDF4D3,stroke:#66D575
+    style tabs fill:#C2E5FF,stroke:#3DADFF
+    style next fill:#F5F5F5,stroke:#B3B3B3

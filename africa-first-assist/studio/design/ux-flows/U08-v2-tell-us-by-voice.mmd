@@ -1,0 +1,26 @@
+flowchart TD
+    start(["V2 concept: Tell us what happened"])
+    notice["Screen: Pilot notice. An AI turns your voice or photos into a request. Darija test. A person is always reachable"]
+    record["Screen: Speak or type. Add photos"]
+    start --> notice --> record
+    record --> net{"Online?"}
+    net -->|"No"| saved["Message: Saved on your phone. Call 24/7 now, or send later"]
+    net -->|"Yes"| urgent{"Sounds urgent?"}
+    urgent -->|"Yes"| sos(["SOS flow U02: the call starts first"])
+    urgent -->|"No"| understood{"Did we understand?"}
+    understood -->|"No"| callback["Message: We will call you back with your recording"]
+    understood -->|"Yes"| summary["Screen: Here is what we understood. Read aloud and written. Is this right? Edit, Send"]
+    summary -->|"Edit"| record
+    summary -->|"Send"| sent["Screen: Sent. An agent checks before anything happens"]
+    sent --> status(["Request status: U03 or U05"])
+
+    classDef choice fill:#FFECBD,stroke:#FFC943
+    classDef msg fill:#FFCDC2,stroke:#FF7556
+    classDef person fill:#C2E5FF,stroke:#3DADFF
+    classDef ai fill:#DCCCFF,stroke:#874FFF
+    classDef later fill:#D9D9D9,stroke:#B3B3B3
+    class net,urgent,understood choice
+    class saved msg
+    class callback,sent person
+    class notice,summary ai
+    class start later
