@@ -211,3 +211,6 @@ flowchart TD
 - Finding 11: assistant public mode before login; E-HRS hand-off to 24/7 abroad.
 - Finding 7: rule 9, legal statements "to confirm by legal counsel".
 - Finding 10: aligned with the canonical MVP list (RM 4.3): API1 engine MVP Must drawn; X12 agency finder, R4, T6 moved to V2; M4 added to V2 medical; AI5, R6, Wallet pass, English UI marked Should; AI1 modes (a) and (b); AI9 pilot proposed on roadside non-injury; W1 WhatsApp optional add-on.
+
+---
+FigJam board (flows 00–09 + journey maps P1–P5, for studio review): https://www.figma.com/board/MaaGiM0gtCrGJ7VgiB053Z

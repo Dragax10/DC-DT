@@ -492,3 +492,6 @@ Source: `studio/reviews/2026-11-18-pitch-package.md`. Canonical scope: RM 4.3.
 - **Finding 2 and 9 (SOS):** blueprint and sequence diagram redrawn call-first: one confirm, call at t = 0, GPS, case and SMS fallback in the background, human answers first with no recorded notice before the agent, guest code read out by the agent. Added "It is for someone else" and "A relative has died" routes; no rating, survey or marketing after bereavement, refused cases or where life was in danger.
 - **Finding 1 and 6 (claim hygiene):** P3 differentiator reworded (insurer apps have geolocated breakdown help; no one-tap SOS with case status or tow tracking found, desk search, not verified in stores). Sanlam "exclusive" → historic partner, 2021 report, status after the 2026 merger to confirm. Schengen visas shown as a range (about 437 000 to 606 000; 480 354 other year/source), official EC figure for slides. "8 M beneficiaries" marked company claim, unverified. "+300" does not appear in this file; if used, it is total AFA staff [REC A4]. MRE flag kept.
 - **Finding 7 (legal):** every 09-08, CNDP and ACAPS point marked "to confirm by legal counsel".
+
+---
+FigJam version of these journey maps (with flows 00–09): https://www.figma.com/board/MaaGiM0gtCrGJ7VgiB053Z
