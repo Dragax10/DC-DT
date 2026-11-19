@@ -9,3 +9,9 @@ Figma file: https://www.figma.com/design/arZuWBwjaycRMOBn4QkRNa
 - **Wireframe kit**: colour/spacing variables, 7 text styles, 23 icons, 13 components.
 
 Greyscale on purpose; the only colour is the SOS accent. Prices are placeholders; example names, places and references are illustrative. Arabic copy needs review by a native writer. Allowed before Gate 1 as a pitch exception (decisions.md, 2026-11-19).
+
+## Visual concept (one possible direction, for discussion)
+Page "Visual concept · one possible direction" in the same Figma file:
+- v1 first pass: Home, Help on the way (flat cards).
+- v2 iOS 26 Liquid Glass: Home (glass cover card, inset grouped list, floating glass tab bar + separate SOS button), Help on the way (large ETA on ambient blue, Maps-style sheet), Lock screen Live Activity with Dynamic Island.
+AFA blue is primary; red only on SOS. Built with Figma's native glass effect; Inter stands in for SF Pro.
