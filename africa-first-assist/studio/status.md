@@ -99,3 +99,8 @@ Merged from roadmap §9.2 and the 2026-11-17 list (desk review Part D). Website-
 18. Teleconsultation: existing medical partners and licences; telemedicine rules AFA follows? (Q10)
 19. Are "zéro risque de refus" and "acceptée par les centres visa" approved by compliance (if reused in the app)? (old Q19)
 20. Does the website stay as is, or will the app's web status page / purchase flow replace parts of it? (old Q20, reframed)
+
+## 2026-11-19 · internal app design exploration
+- AFA App design system (private): https://claude.ai/artifact/SdY4nFjsGw55iB9p9AW8KQ (provisional: no AFA brand guidelines yet; IBM Plex Sans / Plex Sans Arabic stand in).
+- Design canvas, 5 core screens (private): https://claude.ai/artifact/JrCxgSuvjEhd1tZ3wiAhmQ (Accueil, SOS, Assistance en route, Mes contrats, Assurance voyage).
+- Internal only; not past gate 1 or 2. Next: studio lead reviews; then RTL Arabic versions, clickable flow, critic review.
