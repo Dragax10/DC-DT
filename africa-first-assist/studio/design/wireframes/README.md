@@ -15,3 +15,10 @@ Page "Visual concept · one possible direction" in the same Figma file:
 - v1 first pass: Home, Help on the way (flat cards).
 - v2 iOS 26 Liquid Glass: Home (glass cover card, inset grouped list, floating glass tab bar + separate SOS button), Help on the way (large ETA on ambient blue, Maps-style sheet), Lock screen Live Activity with Dynamic Island.
 AFA blue is primary; red only on SOS. Built with Figma's native glass effect; Inter stands in for SF Pro.
+
+## Onboarding · welcome and sign-in (one possible direction)
+Page "Onboarding · welcome and sign-in" in the same Figma file, adapted from the studio lead's "perspective room" CTA exploration:
+- Welcome (first launch): 3D perspective room in AFA blue, grid on walls/floor/ceiling, 8 poster-style assistance images on the walls, big headline, "Get started", "I already have an account", language pill, SOS pill.
+- Sign in: same room blurred, glass sheet with phone number (+212), "Send code", partner code option, terms, "Need help now? Call 24/7".
+- Image library: 8 images generated with Figma AI (gemini-3.1-flash-lite-image), illustrative only.
+- Pale yellow headline (#F3F8C8) comes from the exploration file; it is not an AFA brand colour yet.
