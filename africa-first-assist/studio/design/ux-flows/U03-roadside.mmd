@@ -1,0 +1,37 @@
+flowchart TD
+    start(["Car problem: Help tab, Roadside help"])
+    safe["Screen: Are you safe? Is anyone hurt or in a dangerous place?"]
+    start --> safe
+    safe -->|"Yes"| sos(["SOS flow U02: the call starts first"])
+    safe -->|"No"| what["Screen: What happened? Breakdown, Accident with no injury, Flat tyre, Battery, Keys, Fuel, Other"]
+    what --> where["Screen: Where are you? Map pin you can move, add a landmark"]
+    where --> locok{"Location found?"}
+    locok -->|"No"| typeloc["Screen: Type the address, road and km marker, or city. Or let the agent ask you"]
+    locok -->|"Yes"| check
+    typeloc --> check["Screen: Check and send. Your vehicle, prefilled, change. Optional: can it drive, passengers, photo"]
+    check --> vehicle{"Vehicle on your cover?"}
+    vehicle -->|"Not found"| novehicle["Message: We could not find this vehicle on your covers. Add a cover, Send anyway and an agent checks, Call 24/7"]
+    novehicle -->|"Send anyway"| send
+    vehicle -->|"Yes"| send["Sending your request..."]
+    send --> sent{"Sent?"}
+    sent -->|"No"| notsent["Message: Not sent. Your request is saved. Call now with your details on screen, or send by SMS"]
+    sent -->|"Yes"| received["Screen: Request received. Reference. An agent confirms your cover. SMS sent"]
+    received --> status["Screen: Status timeline. Received, Cover confirmed, Help assigned with name and estimated time, On the way, Arrived, Done"]
+    status --> late{"Running late?"}
+    late -->|"Yes"| latemsg["Notification: Help is running late. Call the agent"]
+    latemsg --> status
+    late -->|"No"| done["Screen: Done. Repaired on the spot, or towed to a garage. What happens next"]
+    done --> rate(["Optional: How did it go? Easy to skip, asked once"])
+    status -->|"Agent finds it is not covered"| notcovered["Screen: Not covered. Why, and what you can do: paid help, local services. No rating request"]
+    status -->|"User cancels"| cancel["Screen: Cancel request. Short reason. Agent informed"]
+    notcovered --> history(["Kept in My requests"])
+    cancel --> history
+
+    classDef choice fill:#FFECBD,stroke:#FFC943
+    classDef msg fill:#FFCDC2,stroke:#FF7556
+    classDef person fill:#C2E5FF,stroke:#3DADFF
+    classDef ok fill:#CDF4D3,stroke:#66D575
+    class locok,vehicle,sent,late choice
+    class novehicle,notsent,latemsg,notcovered msg
+    class received person
+    class start,rate ok

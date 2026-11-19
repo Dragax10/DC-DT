@@ -1,0 +1,44 @@
+flowchart TD
+    start(["After the trip: Help tab, Make a claim"])
+    which["Screen: Which cover?"]
+    kind["Screen: What kind of claim? Medical costs, Baggage, Cancellation, Lost documents, Death of a traveller, Other"]
+    start --> which --> kind
+    kind --> urgent{"Still an emergency?"}
+    urgent -->|"Yes"| sos(["SOS flow U02: the call starts first"])
+    urgent -->|"Death of a traveller"| grief(["We are here for you. Call connects to a person. No ratings or offers"])
+    urgent -->|"No"| medical{"Medical documents needed?"}
+    medical -->|"Yes"| health["Screen: Your health information. Why we need it, who sees it. Agree, or talk to a person instead"]
+    health -->|"Talk to a person"| person(["Call or callback from a claims handler"])
+    health -->|"Agree"| happened
+    medical -->|"No"| happened["Screen: What happened? Date, place, short description"]
+    happened --> list["Screen: Documents you will need. Checklist for this claim type"]
+    list --> upload["Screen: Add documents. Camera, photos, files. Progress for each file"]
+    upload --> upok{"Uploaded?"}
+    upok -->|"Weak connection"| paused["Message: Upload paused. It continues when you are back online. Nothing is lost"]
+    paused --> upload
+    upok -->|"File too big"| big["Message: This file is too big. We can make it smaller, or pick another"]
+    big --> upload
+    upok -->|"Yes"| all{"All documents added?"}
+    all -->|"No"| later["Message: Send now and add the rest later, or save as a draft"]
+    later --> bank
+    all -->|"Yes"| bank["Screen: How we pay you. Account holder, bank account"]
+    bank --> confirm["Screen: Review and confirm. I declare this is true"]
+    confirm --> sent["Screen: Claim sent. Reference, next steps, usual timing. After hours: we start on the next working day, urgent? Call 24/7"]
+    sent --> status["Screen: Claim status. Received, Documents checked, Under review, Decision, Paid"]
+    status -->|"Missing document"| missing["Notification: We need one more document. What and why"]
+    missing --> upload
+    status --> decision{"Decision"}
+    decision -->|"Accepted"| amount["Screen: Amount and breakdown. Payment sent"]
+    amount --> feedback(["Optional one-line feedback, easy to skip"])
+    decision -->|"Refused"| refused["Screen: Decision and reason, with the contract clause. How to contest. No rating request"]
+
+    classDef choice fill:#FFECBD,stroke:#FFC943
+    classDef msg fill:#FFCDC2,stroke:#FF7556
+    classDef person fill:#C2E5FF,stroke:#3DADFF
+    classDef consent fill:#FFE0C2,stroke:#FF9E42
+    classDef ok fill:#CDF4D3,stroke:#66D575
+    class urgent,medical,upok,all,decision choice
+    class paused,big,later,missing,refused msg
+    class grief,person person
+    class health consent
+    class start,feedback ok

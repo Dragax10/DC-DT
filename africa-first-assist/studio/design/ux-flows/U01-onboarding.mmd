@@ -1,0 +1,39 @@
+flowchart TD
+    start(["Opens the app for the first time"])
+    lang["Screen: Choose your language. Francais, Arabic"]
+    welcome["Screen: Welcome. What the app does in one line. SOS bar always visible. Get started. I need help now"]
+    start --> lang --> welcome
+    welcome -->|"I need help now"| sos(["SOS flow U02, no account needed"])
+    welcome -->|"Get started"| phone["Screen: Your phone number. Why we ask"]
+    phone --> code["Screen: Enter the code we sent by SMS. Resend, or get it by phone call"]
+    code --> codeok{"Code accepted?"}
+    codeok -->|"No"| wrong["Message: That code did not work. 2 tries left"]
+    wrong --> code
+    wrong -->|"Too many tries"| wait["Message: For your safety, try again in 15 minutes. Need help now? Call 24/7"]
+    codeok -->|"Yes"| about["Screen: About you. Name, date of birth"]
+    about --> unlock["Screen: Unlock with fingerprint or face next time? Yes, Not now"]
+    unlock --> add["Screen: Add your cover. Policy or certificate number, Partner code, Scan the QR code, I do not have cover yet, Later"]
+    add -->|"I do not have cover yet"| buy(["Buy travel cover U04"])
+    add -->|"Later"| homeempty(["Home without cover. SOS still works"])
+    add -->|"Number or code"| enter["Screen: Enter the number. Picture shows where to find it"]
+    enter --> finding["Finding your cover..."]
+    finding --> found{"Cover found?"}
+    found -->|"No"| notfound["Message: We could not find this cover. Check the number or try another way"]
+    notfound --> add
+    notfound -->|"Third try"| callback["Message: Let a person check for you. Request a callback. SOS and 24/7 number stay visible"]
+    found -->|"Yes, but ended"| ended["Message: This cover ended on date. Renew travel cover?"]
+    found -->|"Partner not in the app yet"| partner["Message: Your assistance works by phone. Number shown, tap to call"]
+    found -->|"Yes, active"| summary["Screen: Is this your cover? Who is covered, valid until, 24/7 number. Yes, this is my cover"]
+    ended --> summary
+    summary --> privacy["Screen: Your privacy choices. Location, notifications, sharing with your insurer. Each explained, change any time"]
+    privacy --> home(["Home with the cover in the Wallet"])
+    phone -.->|"No internet"| offline["Message: You are offline. Emergency numbers still work"]
+
+    classDef choice fill:#FFECBD,stroke:#FFC943
+    classDef msg fill:#FFCDC2,stroke:#FF7556
+    classDef person fill:#C2E5FF,stroke:#3DADFF
+    classDef ok fill:#CDF4D3,stroke:#66D575
+    class codeok,found choice
+    class wrong,wait,notfound,ended,partner,offline msg
+    class callback person
+    class start,home ok

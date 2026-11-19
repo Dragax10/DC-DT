@@ -1,0 +1,35 @@
+flowchart TD
+    start(["I need help now: taps SOS, on any screen, even signed out or locked"])
+    confirm["Screen: Confirm the call. Big button: Call AFA 24/7 now. Cancel. Options: It is for someone else, A relative has died. Guest code shown if not signed in"]
+    start --> confirm
+    confirm -->|"Cancel"| back(["Back where they were. Nothing sent"])
+    confirm -->|"Call now"| phonecall["Phone call starts. A person answers first"]
+    confirm -->|"It is for someone else"| other["Same call, marked: for someone else"]
+    confirm -->|"A relative has died"| grief["Calm screen: Connecting you to our team. A person answers"]
+    other --> phonecall
+    grief --> griefcall(["Call with the funeral team. No ratings, surveys or offers afterwards"])
+    phonecall --> connected{"Did the call connect?"}
+    connected -->|"Yes"| during["During the call, on screen: request reference, guest code, We are sharing your location"]
+    during --> noloc{"Location available?"}
+    noloc -->|"No"| msgloc["Message: We could not find your location. Tell the agent where you are"]
+    noloc -->|"Yes"| after
+    msgloc --> after
+    connected -->|"No"| failed["Message: We could not connect your call. Try again, Ask us to call you back, Local emergency numbers, Send an SMS"]
+    failed -->|"Try again"| phonecall
+    failed -->|"Call me back"| cb["Message: We will call you back as a priority"]
+    failed -->|"Emergency numbers"| local(["Local emergency numbers, work without internet"])
+    cb --> after
+    after["Screen: Your request. Reference, what happens next, 24/7 number"]
+    after -->|"Help is for someone else"| share["Screen: Share their location. Type the place or send them a link"]
+    share --> sms
+    after --> sms["SMS confirmation with reference and 24/7 number"]
+    sms --> track(["Request status timeline: see Roadside flow U03"])
+
+    classDef choice fill:#FFECBD,stroke:#FFC943
+    classDef msg fill:#FFCDC2,stroke:#FF7556
+    classDef person fill:#C2E5FF,stroke:#3DADFF
+    classDef ok fill:#CDF4D3,stroke:#66D575
+    class connected,noloc choice
+    class msgloc,failed,cb msg
+    class phonecall,grief,griefcall person
+    class start,track,local ok

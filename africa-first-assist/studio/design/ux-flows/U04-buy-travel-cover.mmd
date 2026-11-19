@@ -1,0 +1,39 @@
+flowchart TD
+    start(["I need travel cover: Travel tab, Get covered"])
+    trip["Screen: Your trip. Reason: visa, holiday, studies. Destination, dates, travellers and ages"]
+    start --> trip
+    trip --> looking["Finding the right cover..."]
+    looking --> options["Screen: Your options. Full price, key limits, tag: Accepted for Schengen visas. Compare"]
+    options --> fits{"Anything fits?"}
+    fits -->|"No"| nofit["Message: No cover matches this trip, and why. Change the trip, or talk to an agency"]
+    fits -->|"Yes"| details["Screen: What is covered and what is not, in plain words"]
+    details --> signed{"Signed in?"}
+    signed -->|"No"| signin(["Quick sign-in U01, then back here"])
+    signed -->|"Yes"| traveller["Screen: Traveller details. Scan passport or type. Check each field: spelt exactly as in your passport"]
+    signin --> traveller
+    traveller --> more{"More travellers?"}
+    more -->|"Yes"| traveller
+    more -->|"No"| checkup["Screen: Check before you pay. Dates cover the whole stay, meets the visa rule"]
+    checkup --> match{"Everything matches?"}
+    match -->|"No"| mismatch["Message: Your dates do not cover the whole stay. Change dates or choose another cover"]
+    mismatch --> options
+    match -->|"Not sure"| review["Message: We will check this for you. Answer by a time shown. Your details are saved"]
+    match -->|"Yes"| terms["Screen: Summary and terms. Key information, accept"]
+    terms --> pay["Screen: Payment by card. Your bank may ask you to confirm"]
+    pay --> paid{"Payment went through?"}
+    paid -->|"No"| declined["Message: Payment did not go through. Try another card"]
+    declined --> pay
+    paid -->|"Not clear yet"| checking["Message: Checking your payment. You will not be charged twice"]
+    checking --> paid
+    paid -->|"Yes"| covered["Screen: You are covered. Certificate with verification code. Download, Share, Add to phone wallet"]
+    covered -.->|"Certificate delayed"| delayed["Message: Payment received. Your certificate arrives by SMS shortly"]
+    covered --> wallet(["Certificate saved in Wallet, works offline. Receipt by SMS and email"])
+
+    classDef choice fill:#FFECBD,stroke:#FFC943
+    classDef msg fill:#FFCDC2,stroke:#FF7556
+    classDef person fill:#C2E5FF,stroke:#3DADFF
+    classDef ok fill:#CDF4D3,stroke:#66D575
+    class fits,signed,more,match,paid choice
+    class nofit,mismatch,declined,checking,delayed msg
+    class review person
+    class start,wallet,covered ok
