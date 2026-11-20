@@ -104,3 +104,4 @@ Merged from roadmap §9.2 and the 2026-11-17 list (desk review Part D). Website-
 - AFA App design system (private): https://claude.ai/artifact/SdY4nFjsGw55iB9p9AW8KQ (provisional: no AFA brand guidelines yet; IBM Plex Sans / Plex Sans Arabic stand in).
 - Design canvas, 5 core screens (private): https://claude.ai/artifact/JrCxgSuvjEhd1tZ3wiAhmQ (Accueil, SOS, Assistance en route, Mes contrats, Assurance voyage).
 - Internal only; not past gate 1 or 2. Next: studio lead reviews; then RTL Arabic versions, clickable flow, critic review.
+- 2026-11-20: SOS flow wireframed on the canvas, page "Parcours SOS · wireframes": 13 greyscale screens (S01–S13) from flow U02, linked for click-through, with UX notes per row. Open questions: callback delay (operations), local emergency numbers per country (AFA).
