@@ -106,3 +106,4 @@ Merged from roadmap §9.2 and the 2026-11-17 list (desk review Part D). Website-
 - Internal only; not past gate 1 or 2. Next: studio lead reviews; then RTL Arabic versions, clickable flow, critic review.
 - 2026-11-20: SOS flow wireframed on the canvas, page "Parcours SOS · wireframes": 13 greyscale screens (S01–S13) from flow U02, linked for click-through, with UX notes per row. Open questions: callback delay (operations), local emergency numbers per country (AFA).
 - 2026-11-20: SOS flow in high fidelity (AFA App design system) on the canvas, page "Parcours SOS · haute fidélité": HD 01–13, linked, mirrors the wireframes.
+- 2026-11-25: All 31 canvas screens copied to the Figma design file (page "Claude Design · écrans (exploration interne)"): 5 core screens, SOS wireframes S01–S13, SOS high fidelity HD 01–13, as editable layers.
