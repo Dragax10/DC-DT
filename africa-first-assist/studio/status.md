@@ -113,3 +113,11 @@ Merged from roadmap §9.2 and the 2026-11-17 list (desk review Part D). Website-
 - Assumes only the starting information: client vision, goals and constraints are unknown.
 - Tech, legal and budget questions are asked of the AFA teams concerned; we don't decide them.
 - Internal only. Next: meeting 2026-11-26 → notes in meetings/ → brief → gate 1.
+
+## 2026-11-26 · Deck made director-ready for the kickoff meeting
+- English deck (Slides artifact H5bXRosvdapYZBNTW96K2V, version 30) reframed: groundwork and questions, not a proposal. 13 main slides + 10 backup.
+- New slides: "Where our numbers come from" (figure, source, how sure), "What we have done so far", "10 questions", backup divider.
+- Fixed: "about 200 agency points" was wrong; the agency finder lists 200 cities. 92% Darija → 91.9% (RGPH 2024 census, via Telquel).
+- KPI slide now shows the starting point for each measure; no targets before AFA's baseline.
+- Notion question page: the 10 questions on top (French); the 57 questions kept as backup.
+- Still open: app store check of My Wafa, MyRMA, MyAXA, Sanlam (stores unreachable from here); studio name on the cover.
