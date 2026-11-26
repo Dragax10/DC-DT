@@ -125,3 +125,7 @@ Merged from roadmap §9.2 and the 2026-11-17 list (desk review Part D). Website-
 ## 2026-11-26 · Deck in French, direction C
 - Slides artifact H5bXRosvdapYZBNTW96K2V, version 32: all 23 slides in simple French, Mosaïque style (Inter font, star pattern band, white cards).
 - English copy saved in pitch/deck-source-en-2026-11-26/.
+
+## 2026-11-26 · Deck rebuilt on Stylescape C (fix)
+- Version 34. The first pass lost the pattern in the slide viewer (CSS background images are not supported there). Rebuilt with the Mosaïque tiles taken from Stylescape C as uploaded images: bottom band on every slide, pattern panel on the cover and the "Réserve" divider, pattern band on benchmark and journey cards, frosted medallion with the restored cover illustration, persona card on "Le moment qui compte", app-screen mockup on "Ce que nous avons déjà fait".
+- All 23 slides checked in the real slide viewer; illustrations recoloured to the Mosaïque palette.
