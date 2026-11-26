@@ -38,3 +38,9 @@
 - B2B app first: services, contracts, beneficiaries, fleet, amendments, parent/child contracts. Then a B2B2C app, similar to B2C.
 - Priority: a clear SOS flow. Next step: benchmark of 6 assistance apps (Europe, USA), screens and flows.
 - Source: meetings/2026-11-26-kickoff-afa.md.
+
+## 2026-11-26 · Focus on individual clients (particuliers)
+- Decided by: studio lead.
+- What: work first on individual clients, most of whom have no phone or email on file. B2B fleets and large accounts are set aside for now.
+- To confirm with AFA: at kickoff they said B2B first.
+- Working doc: research/2026-11-26-particuliers-classification.md.
