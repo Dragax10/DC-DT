@@ -121,3 +121,7 @@ Merged from roadmap §9.2 and the 2026-11-17 list (desk review Part D). Website-
 - KPI slide now shows the starting point for each measure; no targets before AFA's baseline.
 - Notion question page: the 10 questions on top (French); the 57 questions kept as backup.
 - Still open: app store check of My Wafa, MyRMA, MyAXA, Sanlam (stores unreachable from here); studio name on the cover.
+
+## 2026-11-26 · Deck in French, direction C
+- Slides artifact H5bXRosvdapYZBNTW96K2V, version 32: all 23 slides in simple French, Mosaïque style (Inter font, star pattern band, white cards).
+- English copy saved in pitch/deck-source-en-2026-11-26/.

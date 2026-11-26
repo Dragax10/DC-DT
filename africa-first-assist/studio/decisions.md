@@ -20,3 +20,10 @@
 - **Who:** studio lead.
 - **Why:** keep all project context in one place; standalone Claude Design closes on 14 Dec 2026.
 - **Scope:** internal exploration only. Not shared with AFA. Does not pass gate 1 (brief signed) or gate 2 (direction chosen); anything shown to AFA later needs the studio lead's OK.
+
+## 2026-11-26 · Graphic direction C ("Mosaïque") for the kickoff deck, in French
+- Decided by: studio lead.
+- What: apply Stylescape C "Mosaïque" (zellige-inspired star pattern, light blues, white cards, bold sans titles, uppercase labels) to the meeting slides, and translate the deck into simple French.
+- How: AFA blue #006FB1 replaces Stylescape C's blue (#0075BC), which is almost the same; Stylescape C's ink #1E3551 is used for text. The light blues (Ciel, Azur, Lagon) are used only in the pattern, never for text (contrast).
+- Why: the meeting is with AFA directors; French for the audience, and a local, recognisable visual identity.
+- The English version is kept in pitch/deck-source-en-2026-11-26/.
