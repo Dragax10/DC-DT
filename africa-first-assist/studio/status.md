@@ -129,3 +129,9 @@ Merged from roadmap §9.2 and the 2026-11-17 list (desk review Part D). Website-
 ## 2026-11-26 · Deck rebuilt on Stylescape C (fix)
 - Version 34. The first pass lost the pattern in the slide viewer (CSS background images are not supported there). Rebuilt with the Mosaïque tiles taken from Stylescape C as uploaded images: bottom band on every slide, pattern panel on the cover and the "Réserve" divider, pattern band on benchmark and journey cards, frosted medallion with the restored cover illustration, persona card on "Le moment qui compte", app-screen mockup on "Ce que nous avons déjà fait".
 - All 23 slides checked in the real slide viewer; illustrations recoloured to the Mosaïque palette.
+
+## 2026-11-26 · After kickoff: benchmark of 6 assistance apps
+- Kickoff notes: meetings/2026-11-26-kickoff-afa.md. B2B app first, then B2B2C; priority SOS flow.
+- Benchmark page (FR, internal): https://claude.ai/artifact/B5ZoduJqAM7siX3AVcoPJp. Screens and metadata in research/2026-11-26-benchmark-assistance-apps/.
+- Network: App Store, Google Play and 4 assistance company sites added to the environment's allowed hosts.
+- Next: benchmark of B2B portals; rewrite brief from kickoff notes and get sign-off (gate 1).

@@ -32,3 +32,9 @@
 - Decided by: studio lead.
 - What: the only goal of the meeting is to listen to AFA's business teams and understand them. We don't present the deck; it stays as backup for moments when the discussion stalls.
 - Notion intro updated to match.
+
+## 2026-11-26 · Scope after kickoff (AFA)
+- Decided by: AFA stakeholders, relayed by the studio lead.
+- B2B app first: services, contracts, beneficiaries, fleet, amendments, parent/child contracts. Then a B2B2C app, similar to B2C.
+- Priority: a clear SOS flow. Next step: benchmark of 6 assistance apps (Europe, USA), screens and flows.
+- Source: meetings/2026-11-26-kickoff-afa.md.
