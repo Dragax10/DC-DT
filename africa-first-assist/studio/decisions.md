@@ -60,3 +60,7 @@
 - V1 covers at least what the Al Amana WhatsApp chatbot covers: new request and follow-up, for oneself or a dependant, events illness, accident or injury, hospitalisation, death, duplicate check, summary with reference.
 - Account activation is parked for now.
 - The studio designs the complete app (all events, Morocco and abroad); AFA picks its MVP from it afterwards.
+
+## 2026-11-27 · Gate 1 passed: brief approved
+- Decided by: studio lead ("c'est validé, trace les flows sur Miro").
+- brief.md approved. Research and flow design can start. Next: F01 SOS, F02 declare in chat, F03 follow a claim, on the Miro board "Application Mobile AFA".

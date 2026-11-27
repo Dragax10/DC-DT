@@ -1,6 +1,6 @@
 # Brief · Application AFA pour les bénéficiaires
 
-Statut : BROUILLON, à relire et valider par le responsable du studio (validation 1). Mis à jour le 27 novembre 2026.
+Statut : VALIDÉ par le responsable du studio le 27 novembre 2026 (validation 1).
 Sources : réunion de cadrage du 26/11 (meetings/2026-11-26-kickoff-afa.md), consignes et choix du responsable du studio du 27/11, analyse du chatbot WhatsApp Al Amana.
 
 ## Contexte
