@@ -135,3 +135,8 @@ Merged from roadmap §9.2 and the 2026-11-17 list (desk review Part D). Website-
 - Benchmark page (FR, internal): https://claude.ai/artifact/B5ZoduJqAM7siX3AVcoPJp. Screens and metadata in research/2026-11-26-benchmark-assistance-apps/.
 - Network: App Store, Google Play and 4 assistance company sites added to the environment's allowed hosts.
 - Next: benchmark of B2B portals; rewrite brief from kickoff notes and get sign-off (gate 1).
+
+## 2026-11-27 · New V1 scope, standards and brief
+- Brief rewritten for the beneficiaries app: brief.md (gate 1, awaiting sign-off). Notion: "Brief V1 · application bénéficiaires (à valider)".
+- Work standards: standards.md. Notion: "Nos standards de travail".
+- Next: WhatsApp chatbot analysis (needs the HTML file from the lead's Mac), then flows in Miro.

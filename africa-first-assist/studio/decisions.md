@@ -44,3 +44,11 @@
 - What: work first on individual clients, most of whom have no phone or email on file. B2B fleets and large accounts are set aside for now.
 - To confirm with AFA: at kickoff they said B2B first.
 - Working doc: research/2026-11-26-particuliers-classification.md.
+
+## 2026-11-27 · V1 scope: beneficiaries app (claims, contracts, notifications, SOS timeline)
+- Decided by: studio lead, relaying AFA business teams.
+- V1 for people covered by travel, health or car assistance: declare and track claims, claims history, contract details, notifications (birthday, guidance, renewal, claim steps, location sharing, provider arrival).
+- SOS button is a must. SOS launches a "timeline de la prestation"; the app sends identity, contract and location to the assistance desk automatically (feasibility to discuss with AFA).
+- Requirement: guided, clear experience; clear, tested UX patterns.
+- Plan: standards, WhatsApp chatbot analysis, flows and journeys, wireframes, stylescapes, UI and handoff.
+- Brief rewritten (brief.md), awaiting sign-off (gate 1). Standards: standards.md.
