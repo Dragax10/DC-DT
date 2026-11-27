@@ -64,3 +64,8 @@
 ## 2026-11-27 · Gate 1 passed: brief approved
 - Decided by: studio lead ("c'est validé, trace les flows sur Miro").
 - brief.md approved. Research and flow design can start. Next: F01 SOS, F02 declare in chat, F03 follow a claim, on the Miro board "Application Mobile AFA".
+
+## 2026-11-27 · Suivi de prestation : étapes et temps restant, la carte en option
+- Decided by: studio lead (storyboard J1 review).
+- Following a provider is shown as ticked steps plus a time-left countdown, like a delivery tracker. The provider's map is optional, only if AFA receives the provider's position (open question for AFA ops and partners).
+- Aligned: brief.md (point 3), F03 flow, journey J1, storyboard J1 frame 4.

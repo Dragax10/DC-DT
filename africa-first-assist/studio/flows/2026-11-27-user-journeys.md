@@ -13,7 +13,7 @@ Note : le widget « journey » de Miro n'est pas inclus dans l'offre du tableau.
 | La voiture s'arrête sur l'A3, de nuit | 1 | Numéro introuvable dans le noir | Widget SOS sur l'écran verrouillé, sécurité d'abord · F01 |
 | Appuie sur SOS : Véhicule, Panne | 2 | GPS imprécis, réseau faible | Repères routiers (sens, kilomètre), envoi par SMS sans data |
 | L'agent rappelle | 3 | Attente du rappel sans délai connu | Délai de rappel estimé, selon l'urgence · F04 |
-| Suit le dépanneur en direct | 3 | Pas de carte si le dépanneur ne partage pas sa position | Nom et véhicule du dépanneur, délai habituel honnête · F03, F07 |
+| Suit le dépanneur (étapes et temps restant) | 3 | Temps restant imprécis ou pas mis à jour | Nom et véhicule du dépanneur, temps restant honnête et mis à jour · F03, F07 |
 | Remorquage vers un garage | 3 | Ignore que retour et hébergement sont couverts | Proposer les garanties liées du contrat · F06 |
 | Le dossier est clos | 4 | Documents pour le garage dispersés | Résumé et documents gardés dans l'historique · F05 |
 

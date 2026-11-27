@@ -18,7 +18,7 @@ Le studio conçoit **l'application complète**. AFA choisira ensuite son MVP dan
 ## Ce que fait l'application
 1. **Bouton SOS** (insistance forte du métier) : un geste lance la demande. L'application envoie directement au plateau l'identité, le contrat et la position. Le client n'a pas à tout raconter.
 2. **Déclarer un sinistre en chat** (style Lemonade), ouvert à la demande. Modifier une réponse et recommencer sont toujours possibles ; rien n'est envoyé avant confirmation. La conversation doit être fiable et rassurante.
-3. **Timeline de la prestation, comme une livraison** : après le SOS, la déclaration ou un lien envoyé par la plateforme sinistres, le client suit chaque étape avec son heure ; position du prestataire et temps restant quand ils sont connus.
+3. **Timeline de la prestation, comme une livraison** : après le SOS, la déclaration ou un lien envoyé par la plateforme sinistres, le client suit chaque étape avec son heure et le temps restant. La carte du prestataire est une option, seulement si AFA reçoit sa position (décision du 27/11).
 4. **Appeler l'assistance, toujours** : sur chaque écran, avec la possibilité d'être rappelé.
 5. **Historique des sinistres.**
 6. **Mes contrats** : le détail complet de chaque contrat.
