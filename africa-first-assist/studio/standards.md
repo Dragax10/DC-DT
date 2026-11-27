@@ -34,6 +34,7 @@ On part de patterns déjà validés avant d'inventer :
 - **Baymard Institute** : formulaires et saisie.
 - **Nielsen Norman Group** : les 10 heuristiques d'utilisabilité, timelines de statut, notifications.
 - **Benchmark assistance** (26/11) : ADAC, Green Flag, Allyz, International SOS, Assist America, AXA.
+- **Lemonade** (assurance), ajouté par le responsable du studio : parcours conversationnel une question à la fois, déclaration de sinistre guidée avec photos ou courte vidéo, statut clair, contrat en langage simple. Limites pour AFA : une personne décide d'une prise en charge, et le conversationnel ne ralentit jamais un SOS. Fonctionnalités à vérifier dans le benchmark avant de les citer.
 
 Un pattern nouveau doit être signalé comme tel et testé en priorité.
 
