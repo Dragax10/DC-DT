@@ -27,6 +27,11 @@ On classe par **événement**, pas par contrat : un contrat voyage peut couvrir 
 - La personne choisit l'événement, jamais le contrat. Seuls les événements couverts par ses contrats sont proposés.
 - Question pour AFA : quand plusieurs contrats couvrent le même événement, lequel s'applique et qui décide ?
 
+## Choix du 27/11 (responsable du studio)
+- **Déclaration en chat** (style Lemonade). Défi : rendre la conversation fiable et rassurante ; modifier une réponse et recommencer doivent toujours être accessibles.
+- **Périmètre minimum V1 = tout ce que couvre le chatbot Al Amana** : nouvelle demande et suivi de dossier ; pour moi-même ou un proche (ayants droit) ; événements maladie, accident ou blessure, hospitalisation, décès ; contrôle des doublons ; récapitulatif avec référence.
+- L'activation de l'espace est mise de côté pour l'instant.
+
 ## Exigences du métier
 - Une expérience guidée et claire.
 - Des patterns UX clairs et déjà testés, en particulier pour les notifications et les informations complémentaires.

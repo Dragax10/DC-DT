@@ -52,3 +52,10 @@
 - Requirement: guided, clear experience; clear, tested UX patterns.
 - Plan: standards, WhatsApp chatbot analysis, flows and journeys, wireframes, stylescapes, UI and handoff.
 - Brief rewritten (brief.md), awaiting sign-off (gate 1). Standards: standards.md.
+
+## 2026-11-27 · Claims declared in chat; V1 covers at least the Al Amana chatbot scope
+- Decided by: studio lead.
+- Claims are classified by event (vehicle, health, travel, death) and place (Morocco or abroad), not by contract.
+- Declaration happens in a chat (Lemonade style). Editing an answer and restarting must always be available; the chat must feel reliable and reassuring.
+- V1 covers at least what the Al Amana WhatsApp chatbot covers: new request and follow-up, for oneself or a dependant, events illness, accident or injury, hospitalisation, death, duplicate check, summary with reference.
+- Account activation is parked for now.
