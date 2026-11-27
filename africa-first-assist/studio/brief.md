@@ -20,6 +20,13 @@ Déclarer un sinistre demande un appel et un long récit d'informations que l'AF
 5. **Mes contrats** : voir le détail complet de chaque contrat.
 6. **Notifications** : personnelles (anniversaire), guidance et mises à jour, renouvellement, étapes du sinistre, partage de position, arrivée du prestataire.
 
+## Découpage des sinistres (ajouté le 27/11)
+On classe par **événement**, pas par contrat : un contrat voyage peut couvrir un véhicule, la santé, les bagages, le rapatriement.
+- Événements : véhicule, santé, voyage (hors véhicule et santé), décès.
+- Lieu : au Maroc ou à l'étranger (détecté par la position) ; l'étranger ajoute hébergement, rapatriement, numéros locaux.
+- La personne choisit l'événement, jamais le contrat. Seuls les événements couverts par ses contrats sont proposés.
+- Question pour AFA : quand plusieurs contrats couvrent le même événement, lequel s'applique et qui décide ?
+
 ## Exigences du métier
 - Une expérience guidée et claire.
 - Des patterns UX clairs et déjà testés, en particulier pour les notifications et les informations complémentaires.
