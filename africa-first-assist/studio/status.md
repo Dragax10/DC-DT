@@ -147,3 +147,4 @@ Merged from roadmap §9.2 and the 2026-11-17 list (desk review Part D). Website-
 - Miro's "journey" widget is not on the board's plan: journeys drawn with plain shapes (phases, 6 lanes, feelings row).
 - Personas are hypothetical; feelings and pain points to check in user tests.
 - Next: critic review of flows and journeys, then wireframes for the first AFA meeting (step 4).
+- Storyboard J1 (pilot, 6 frames, black-and-white AI illustrations from Figma) on Miro under section 04. Style to validate before J2–J5. Notes: research/storyboards/README.md.
