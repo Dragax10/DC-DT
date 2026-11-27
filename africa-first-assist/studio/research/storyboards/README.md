@@ -11,7 +11,7 @@ Storyboard frame, Notion-style illustration: simple hand-drawn black ink line ar
 Personnage fixe J1 : « a man in his late thirties with short dark hair and a casual jacket ».
 
 ## J1 · Youssef (pilote, 27/11)
-1. La panne (1/5) · 2. Le SOS, F01 (2/5) · 3. L'agent rappelle, F04 (3/5) · 4. Le dépanneur arrive, F03 F07 (3/5) · 5. Le remorquage, F06 (3/5) · 6. Le lendemain, F05 (4/5)
+1. La panne (1/5) · 2. Le SOS, F01 (2/5) · 3. L'agent rappelle, F04 (3/5) · 4. Le suivi (étapes cochées + temps restant, pas de carte), F03 F07 (3/5) · 5. Le remorquage, F06 (3/5) · 6. Le lendemain, F05 (4/5)
 
 ## Suite
 J2 à J5 après validation du style par le responsable du studio.
