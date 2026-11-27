@@ -59,3 +59,4 @@
 - Declaration happens in a chat (Lemonade style). Editing an answer and restarting must always be available; the chat must feel reliable and reassuring.
 - V1 covers at least what the Al Amana WhatsApp chatbot covers: new request and follow-up, for oneself or a dependant, events illness, accident or injury, hospitalisation, death, duplicate check, summary with reference.
 - Account activation is parked for now.
+- The studio designs the complete app (all events, Morocco and abroad); AFA picks its MVP from it afterwards.

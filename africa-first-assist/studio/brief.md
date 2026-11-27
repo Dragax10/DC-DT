@@ -31,6 +31,7 @@ On classe par **événement**, pas par contrat : un contrat voyage peut couvrir 
 - **Déclaration en chat** (style Lemonade). Défi : rendre la conversation fiable et rassurante ; modifier une réponse et recommencer doivent toujours être accessibles.
 - **Périmètre minimum V1 = tout ce que couvre le chatbot Al Amana** : nouvelle demande et suivi de dossier ; pour moi-même ou un proche (ayants droit) ; événements maladie, accident ou blessure, hospitalisation, décès ; contrôle des doublons ; récapitulatif avec référence.
 - L'activation de l'espace est mise de côté pour l'instant.
+- **Le studio conçoit l'application complète** : tous les événements (véhicule, santé, voyage, décès), au Maroc et à l'étranger. AFA choisira ensuite son MVP dans ce périmètre.
 
 ## Exigences du métier
 - Une expérience guidée et claire.
