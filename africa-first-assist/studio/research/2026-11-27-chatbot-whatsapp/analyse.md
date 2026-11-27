@@ -50,6 +50,46 @@ flowchart TD
 | S8 | Téléphone invalide 3 fois | Redémarrage auto en 5 s | Tout est perdu à la dernière étape |
 | S9 | Doublon dans les 24 h | Arrêt, référence existante | Pas de statut du dossier existant |
 
+## Vérification exhaustive (relecture ligne par ligne)
+
+### Les points de décision
+| # | Étape | Branches | Qui décide dans la démo |
+|---|---|---|---|
+| D1 | Accueil | Demande / Suivi | La personne |
+| D2 | Suivi : référence | Trouvé / Introuvable | Simulé (règle réelle inconnue) |
+| D3 | Position | Maroc / Hors Maroc | Simulé |
+| D4 | CIN ou n° client | Identifié / Non identifié (boucle) | Simulé |
+| D5 | Pour qui | Moi-même / Un proche (3 ayants droit × 3 civilités) | La personne |
+| D6 | Événement | 4 choix, ou saisie invalide (boucle) | La personne |
+| D7 | Date | Valide / invalide ≤ 2 fois / 3 fois → redémarrage | Règle de la démo |
+| D8 | Téléphone | Valide / invalide ≤ 2 fois / 3 fois → redémarrage | Règle de la démo |
+| D9 | Doublon 24 h | Non / Oui | Simulé |
+
+Au total : 9 fins, 2 boucles sans sortie (CIN non reconnu, numéro d'événement invalide), et 40 combinaisons de succès (moi-même × 4 événements, plus 3 ayants droit × 3 civilités × 4 événements). Quatre décisions (D2, D3, D4, D9) sont simulées : les vraies règles côté AFA sont à connaître.
+
+### Saisies testées avec les règles exactes de la démo
+| Saisie | Résultat | Problème |
+|---|---|---|
+| Date « 1/5/2025 », « 14.05.2025 », « 14 05 2025 », « 14/05/25 » | Refusée | Façons courantes d'écrire une date |
+| Date « 31/02/2025 », « 31/04/2025 » | **Acceptée** | Date qui n'existe pas |
+| Date « 01/01/1900 » | **Acceptée** | Aucune borne : ni ancienneté maximale, ni début du contrat |
+| Téléphone « +212662456089 » | Refusé | Format international standard |
+| Téléphone « 0662456089 », « 06 62 45 60 89 » | Refusé | Façon dont les Marocains écrivent leur numéro |
+| Téléphone « 00212662456089 » | Refusé | Format courant depuis l'étranger |
+| Téléphone « 212 662 45 60 89 » | Accepté | Espaces et tirets tolérés : bien |
+| Événement « 01 », « 1. », « un », « Maladie » | Refusé | Réponses naturelles |
+
+### Scénarios absents de la démo
+1. **Un proche déclare pour le titulaire.** La liste des ayants droit ne contient pas le titulaire. Si Khadija est hospitalisée ou décédée, son conjoint ne peut pas déclarer pour elle : il doit choisir « Moi-même », et le dossier ne garde aucune trace de qui déclare. C'est le cas le plus probable pour un décès.
+2. **Pas de confirmation avant création du dossier.** Le récapitulatif s'affiche une fois le dossier créé, sans bouton « Modifier » ni « Confirmer ». Aucune réponse ne peut être corrigée en cours de route.
+3. **Fins sans issue.** Après « dossier trouvé », après un doublon et après un succès, la conversation s'arrête : pas de retour au menu, pas d'autre demande possible.
+4. **Messages libres.** Sur un vrai WhatsApp, la personne peut écrire, envoyer un vocal ou une photo à tout moment. La démo ne gère aucun de ces cas. Les vocaux en darija sont très courants.
+5. **Refus de partager la position**, ou position impossible à obtenir : aucune option pour écrire sa ville ou son adresse.
+6. **Reprise après une pause.** Rien ne dit ce qui se passe si la personne revient une heure plus tard au milieu du parcours.
+7. **Plusieurs contrats.** Cette version ne gère qu'un contrat par client.
+8. **Sécurité.** Le CIN seul suffit pour déclarer au nom de quelqu'un.
+9. **L'icône téléphone de l'en-tête** est décorative : aucun bouton n'appelle le plateau.
+
 ## Ce qui marche
 1. Accueil clair avec deux intentions : nouvelle demande ou suivi.
 2. Barre de progression « Étape x / 7 » (heuristique 1, visibilité de l'état).
