@@ -140,3 +140,10 @@ Merged from roadmap §9.2 and the 2026-11-17 list (desk review Part D). Website-
 - Brief rewritten for the beneficiaries app: brief.md (gate 1, awaiting sign-off). Notion: "Brief V1 · application bénéficiaires (à valider)".
 - Work standards: standards.md. Notion: "Nos standards de travail".
 - Next: WhatsApp chatbot analysis (needs the HTML file from the lead's Mac), then flows in Miro.
+
+## 2026-11-27 · Flows, app map and user journeys on Miro
+- Gate 1 passed (brief approved). Flows F01–F07 drawn on Miro (section 03), horizontal; app map done. Files in flows/.
+- User journeys J1–J5 drawn on Miro (section 04): panne autoroute, hospitalisation d'un proche, frais médicaux à l'étranger, décès à l'étranger, sans l'app par lien SMS. Copy: flows/2026-11-27-user-journeys.md.
+- Miro's "journey" widget is not on the board's plan: journeys drawn with plain shapes (phases, 6 lanes, feelings row).
+- Personas are hypothetical; feelings and pain points to check in user tests.
+- Next: critic review of flows and journeys, then wireframes for the first AFA meeting (step 4).
